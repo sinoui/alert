@@ -1,0 +1,94 @@
+{
+  "name": "@sinoui/alert",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "umd:main": "dist/sinoui-alert.umd.production.js",
+  "module": "dist/sinoui-alert.esm.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "start": "ts-lib-tools watch",
+    "test": "ts-lib-tools test",
+    "build": "ts-lib-tools build",
+    "format": "ts-lib-tools format",
+    "lint": "ts-lib-tools lint",
+    "prepublishOnly": "ts-lib-tools build",
+    "doc:dev": "docz dev",
+    "doc:build": "docz build",
+    "doc:publish": "docz build && gh-pages -d .docz/dist"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "always"
+  },
+  "eslintConfig": {
+    "extends": "ts-lib"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "cross-env CI=true ts-lib-tools test",
+      "eslint --fix --color",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@babel/runtime": "^7.7.7"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "css-loader": "^3.4.1",
+    "docz": "^2.2.0",
+    "docz-theme-default": "^1.2.0",
+    "gh-pages": "^2.2.0",
+    "husky": "^4.0.1",
+    "lint-staged": "^9.5.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "style-loader": "^1.1.2",
+    "ts-lib-tools": "^0.8.6",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.7.4",
+    "webpack-docz-ghpages-plugin": "^0.8.0"
+  }
+}
