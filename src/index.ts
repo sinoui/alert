@@ -1,3 +1,3 @@
-import Counter from './Counter';
+import Alert from './Alert';
 
-export default Counter;
+export default Alert;

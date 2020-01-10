@@ -64,16 +64,25 @@
   ],
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
-    "@babel/runtime": "^7.7.7"
+    "@babel/runtime": "^7.7.7",
+    "@sinoui/theme": "^0.3.5",
+    "react-icons": "^3.8.0",
+    "react-transition-group": "^4.3.0",
+    "sinoui-components": "^0.2.9",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
+    "@types/react-transition-group": "^4.2.3",
+    "@types/styled-components": "^4.4.2",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.4.1",
-    "docz": "^2.2.0",
+    "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
     "gh-pages": "^2.2.0",
     "husky": "^4.0.1",

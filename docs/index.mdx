@@ -3,6 +3,63 @@ name: 开始
 route: /
 ---
 
+import Alert from '../src/Alert';
+
 # 开始使用
 
-在这里写项目使用文档。
+警告提示，展现需要关注的信息。
+
+## 入门示例
+
+<Alert message="提示信息"  showIcon />
+
+## 设置显示关闭按钮
+
+<Alert message="提示信息" closable  />
+
+## 设置显示辅助图标
+
+<Alert message="提示信息" showIcon  />
+
+## 不同类型的警告提示
+
+<Alert message="提示信息" closable showIcon type="info" />
+
+<Alert message="提示信息" closable showIcon type="success" />
+
+<Alert message="提示信息" closable showIcon type="warning" />
+
+<Alert message="提示信息" closable showIcon type="error" />
+
+## 设置辅助性文字介绍
+
+<Alert message="提示信息"  description="辅助性文字介绍" closable />
+
+## 设置显示辅助图标
+
+<Alert message="提示信息"  description="辅助性文字介绍" showIcon type="info"/>
+
+## 设置辅助性文字的辅助图标
+
+<Alert message="提示信息"  description="辅助性文字介绍" closable showIcon type="info"/>
+
+<Alert message="提示信息"  description="辅助性文字介绍" closable showIcon type="success"/>
+
+<Alert message="提示信息"  description="辅助性文字介绍" closable showIcon type="warning"/>
+
+<Alert message="提示信息"  description="辅助性文字介绍" closable showIcon type="error"/>
+
+## API
+
+参数解析：
+
+| 参数名称 | 参数类型                             | 说明                                                                                                                                     |
+| -------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| afterClose  | () => void                      | 关闭动画结束后触发的回调函数                                                                                                                              |
+| closable   | boolean | 默认不显示关闭按钮 |
+| description   | string|ReactNode | 警告提示的辅助性文字介绍 |
+| message   | string|ReactNode | 警告提示内容 |
+| showIcon   | boolean | 是否显示辅助图标 |
+| type   | string | 指定警告提示的样式，有四种选择 success、info、warning、error |
+| showIcon   | boolean | 是否显示辅助图标 |
+
