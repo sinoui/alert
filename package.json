@@ -6,6 +6,14 @@
   "umd:main": "dist/sinoui-alert.umd.production.js",
   "module": "dist/sinoui-alert.esm.js",
   "types": "types/index.d.ts",
+  "homepage": "https://sinoui.github.io/alert",
+  "bugs": {
+    "url": "https://github.com/sinoui/alert/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinoui/alert.git"
+  },
   "scripts": {
     "start": "ts-lib-tools watch",
     "test": "ts-lib-tools test",

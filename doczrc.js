@@ -8,7 +8,10 @@ import packageInfo from './package.json';
  */
 function getBaseUrl() {
   if (process.env.NODE_ENV === 'production') {
-    const { name, homepage } = packageInfo;
+    const {
+      name,
+      homepage
+    } = packageInfo;
 
     if (homepage) {
       return url.parse(homepage).path;
@@ -27,7 +30,7 @@ export default {
   typescript: true,
   files: ['**/*.mdx'],
   public: './docs/assets',
-  menu: ['首页'],
+  menu: [],
   wrapper: 'docs/Wrapper.tsx',
   indexHtml: 'docs/index.html',
   base: getBaseUrl(),
@@ -50,7 +53,9 @@ export default {
       .loader('postcss-loader')
       .options({
         plugins: (loader) => [
-          require('postcss-import')({ root: loader.resourcePath }),
+          require('postcss-import')({
+            root: loader.resourcePath,
+          }),
           require('postcss-preset-env')({
             browsers: ['last 2 versions', 'not dead', 'IE 10', 'IE 11'],
           }),
@@ -69,8 +74,8 @@ export default {
       .end();
 
     config.watchOptions({
-        ignored: ['node_modules', 'dist', '.cache', 'coverage', '.docz']
-      });
+      ignored: ['node_modules', 'dist', '.cache', 'coverage', '.docz'],
+    });
 
     return config;
   },
