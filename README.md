@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@sinoui/alert)](https://www.npmjs.com/package/@sinoui/alert)
 [![downloads](https://img.shields.io/npm/dm/@sinoui/alert)](https://www.npmjs.com/package/@sinoui/alert)
 
-全局提示消息条。[官方文档](https://sinoui.github.io/alert/)
+警告提示，展现需要关注的信息。[官方文档](https://sinoui.github.io/alert/)
 
 ## 安装
 

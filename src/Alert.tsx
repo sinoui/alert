@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MdClose } from 'react-icons/md';
 import styled, { createGlobalStyle } from 'styled-components';
 import { CSSTransition } from 'react-transition-group';
 import Icon from 'sinoui-components/Icon';
@@ -12,6 +11,7 @@ import {
   AiFillExclamationCircle,
   AiOutlineExclamationCircle,
   AiOutlineCloseCircle,
+  AiOutlineClose,
 } from 'react-icons/ai';
 
 const Globalstyle = createGlobalStyle`
@@ -47,10 +47,10 @@ const Div = styled.div<{
   padding: ${(props) =>
     // eslint-disable-next-line no-nested-ternary
     props.showIcon && props.description
-      ? '15px 34px 15px 64px'
+      ? '15px 30px 15px 64px'
       : props.showIcon && !props.description
-      ? '8px 34px 8px 37px'
-      : '8px 34px 8px 15px'};
+      ? '8px 30px 8px 37px'
+      : '8px 30px 8px 15px'};
   color: rgba(0, 0, 0, 0.65);
   line-height: 1.5;
   border-radius: 4px;
@@ -86,9 +86,18 @@ const SpanContent = styled.span<{ description?: React.ReactNode }>`
   line-height: 22px;
 `;
 
-const ButtonContent = styled.button<{ description?: React.ReactNode }>`
+const ButtonContent = styled.button<{
+  description?: React.ReactNode;
+  message: React.ReactNode;
+}>`
   position: absolute;
-  top: ${(props) => (props.description ? '8px' : '10px')};
+  top: ${(props) =>
+    // eslint-disable-next-line no-nested-ternary
+    props.description && props.message
+      ? '8px'
+      : !props.description && props.message
+      ? '10px'
+      : '16px'};
   right: 16px;
   overflow: hidden;
   font-size: 16px;
@@ -97,6 +106,7 @@ const ButtonContent = styled.button<{ description?: React.ReactNode }>`
   cursor: pointer;
   background-color: transparent;
   outline: none;
+  color: rgba(0, 0, 0, 0.75);
 `;
 
 const DenseIcon = styled(Icon)<{ description?: React.ReactNode }>`
@@ -176,9 +186,10 @@ function Alert(props: Props) {
       type="button"
       onClick={handleClose}
       tabIndex={0}
+      message={message}
       data-testid="button"
     >
-      <MdClose />
+      <AiOutlineClose />
     </ButtonContent>
   ) : null;
 
@@ -216,6 +227,7 @@ function Alert(props: Props) {
           type={type}
           className={className}
         >
+          {closeIcon}
           {showIcon ? (
             <DenseIcon description={description} color={type}>
               {iconNode}
@@ -227,7 +239,6 @@ function Alert(props: Props) {
             </Span>
             <SpanContent description={description}>{description}</SpanContent>
           </div>
-          {closeIcon}
           {children}
         </Div>
       </CSSTransition>
