@@ -1,6 +1,26 @@
 # @sinoui/alert
 
-这是由[ts-lib-scripts](https://github.com/sinoui/ts-lib-scripts)创建的TypeScript库项目。
+[![npm version](https://img.shields.io/npm/v/@sinoui/alert)](https://www.npmjs.com/package/@sinoui/alert)
+[![downloads](https://img.shields.io/npm/dm/@sinoui/alert)](https://www.npmjs.com/package/@sinoui/alert)
+
+全局提示消息条。[官方文档](https://sinoui.github.io/alert/)
+
+## 安装
+
+```shell
+yarn add @sinoui/alert
+```
+
+## 简单示例
+
+```tsx
+import React, { useState } from 'react';
+import Alert from '@sinoui/alert';
+
+<Alert message="提示信息" />;
+```
+
+更多示例请参考[官方文档](https://sinoui.github.io/alert/)。
 
 ## 本地开发
 
