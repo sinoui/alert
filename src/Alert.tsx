@@ -41,6 +41,7 @@ body{
 const Div = styled.div<{
   description?: React.ReactNode;
   showIcon?: boolean;
+  type?: 'info' | 'success' | 'warning' | 'error';
 }>`
   position: relative;
   padding: ${(props) =>
@@ -49,12 +50,19 @@ const Div = styled.div<{
       ? '15px 34px 15px 64px'
       : props.showIcon && !props.description
       ? '8px 34px 8px 37px'
-      : '8px 34px 15px 15px'};
+      : '8px 34px 8px 15px'};
   color: rgba(0, 0, 0, 0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: ${(props) => props.theme.palette.background.default};
-  border: 1px solid ${(props) => props.theme.palette.primary[100]};
+  background-color: ${(props) =>
+    props.theme.palette.type === 'light'
+      ? props.theme.palette[props.type || 'info'][50]
+      : props.theme.palette[props.type || 'info'][200]};
+  border: 1px solid
+    ${(props) =>
+      props.theme.palette.type === 'light'
+        ? props.theme.palette[props.type || 'info'][100]
+        : props.theme.palette[props.type || 'info'][300]};
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -200,10 +208,13 @@ function Alert(props: Props) {
         <Div
           showIcon={showIcon}
           description={description}
+          type={type}
           className={className}
         >
           {showIcon ? (
-            <DenseIcon description={description}>{iconNode}</DenseIcon>
+            <DenseIcon description={description} color={type}>
+              {iconNode}
+            </DenseIcon>
           ) : null}
           <div>
             <Span description={description}>{message}</Span>
