@@ -80,6 +80,7 @@ const AlertLayout = styled.div<{
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
+  word-break: ${(props) => props.children && 'break-all'};
 `;
 
 const Span = styled.span<{ description?: React.ReactNode }>`
@@ -101,11 +102,15 @@ const AlertDescription = styled.span<{ description?: React.ReactNode }>`
 const renderButton = (props: {
   description?: React.ReactNode;
   message: React.ReactNode;
+  children?: React.ReactNode;
 }) => {
   if (props.description && props.message) {
     return '8px';
   }
   if (!props.description && props.message) {
+    return '10px';
+  }
+  if (!props.description && props.children) {
     return '10px';
   }
   return '16px';

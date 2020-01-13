@@ -19,6 +19,7 @@ exports[`Alert 快照测试 不同类型的警告提示 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
+  word-break: break-all;
 }
 
 .c2 {
@@ -125,6 +126,7 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
+  word-break: break-all;
 }
 
 .c1 {
@@ -177,6 +179,7 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
+  word-break: break-all;
 }
 
 .c2 {
@@ -269,6 +272,7 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
+  word-break: break-all;
 }
 
 .c2 {
@@ -375,6 +379,7 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
+  word-break: break-all;
 }
 
 .c2 {
@@ -486,6 +491,7 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
+  word-break: break-all;
 }
 
 .c2 {
