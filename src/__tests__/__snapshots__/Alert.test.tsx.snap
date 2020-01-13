@@ -356,7 +356,7 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
 </div>
 `;
 
-exports[`Alert 快照测试 设置显示辅助图标 2`] = `
+exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
 .c0 {
   position: relative;
   padding: 15px 30px 15px 64px;
@@ -467,7 +467,7 @@ exports[`Alert 快照测试 设置显示辅助图标 2`] = `
 </div>
 `;
 
-exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
+exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
 .c0 {
   position: relative;
   padding: 15px 30px 15px 64px;

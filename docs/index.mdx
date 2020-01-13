@@ -35,11 +35,11 @@ import Alert from '../src/Alert';
 
 <Alert message="提示信息"  description="辅助性文字介绍" closable />
 
-## 设置显示辅助图标
+## 设置辅助性文字介绍和辅助图标
 
 <Alert message="提示信息"  description="辅助性文字介绍" showIcon type="info"/>
 
-## 设置不同类型辅助性文字的辅助图标
+## 不同类型辅助性文字介绍和辅助图标
 
 <Alert message="提示信息"  description="辅助性文字介绍" closable showIcon type="info"/>
 
@@ -57,9 +57,9 @@ import Alert from '../src/Alert';
 | -------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | afterClose  | () => void                      | 关闭动画结束后触发的回调函数                                                                                                                              |
 | closable   | boolean | 默认不显示关闭按钮 |
-| description   | string|ReactNode | 警告提示的辅助性文字介绍 |
-| message   | string|ReactNode | 警告提示内容 |
+| description   | string / ReactNode | 警告提示的辅助性文字介绍 |
+| message   | string / ReactNode | 警告提示内容 |
 | showIcon   | boolean | 是否显示辅助图标 |
 | type   | string | 指定警告提示的样式，有四种选择 success、info、warning、error |
-| showIcon   | boolean | 是否显示辅助图标 |
-
+| className   | string | 自定义类名 |
+| children   | React.ReactNode | 子元素 |

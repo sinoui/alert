@@ -14,6 +14,10 @@ import {
   AiOutlineClose,
 } from 'react-icons/ai';
 
+/**
+ * Alert组件  警告提示，展现需要关注的信息。
+ */
+
 const Globalstyle = createGlobalStyle`
 body{
   .sinoui-alert-enter {
@@ -38,31 +42,39 @@ body{
 }
 }`;
 
-const Div = styled.div<{
+const renderAlertLayoutFun = (props: {
+  description?: React.ReactNode;
+  showIcon?: boolean;
+  type?: 'info' | 'success' | 'warning' | 'error';
+}) => {
+  if (props.showIcon && props.description) {
+    return '15px 30px 15px 64px';
+  }
+  if (props.showIcon && !props.description) {
+    return '8px 30px 8px 37px';
+  }
+  return '8px 30px 8px 15px';
+};
+
+const AlertLayout = styled.div<{
   description?: React.ReactNode;
   showIcon?: boolean;
   type?: 'info' | 'success' | 'warning' | 'error';
 }>`
   position: relative;
-  padding: ${(props) =>
-    // eslint-disable-next-line no-nested-ternary
-    props.showIcon && props.description
-      ? '15px 30px 15px 64px'
-      : props.showIcon && !props.description
-      ? '8px 30px 8px 37px'
-      : '8px 30px 8px 15px'};
+  padding: ${(props) => renderAlertLayoutFun(props)};
   color: rgba(0, 0, 0, 0.65);
   line-height: 1.5;
   border-radius: 4px;
   background-color: ${(props) =>
     props.theme.palette.type === 'light'
-      ? props.theme.palette[props.type || 'info'][50]
-      : props.theme.palette[props.type || 'info'][200]};
+      ? props.theme.palette[props.type ?? 'primary'][50]
+      : props.theme.palette[props.type ?? 'primary'][200]};
   border: 1px solid
     ${(props) =>
       props.theme.palette.type === 'light'
-        ? props.theme.palette[props.type || 'info'][100]
-        : props.theme.palette[props.type || 'info'][300]};
+        ? props.theme.palette[props.type ?? 'primary'][100]
+        : props.theme.palette[props.type ?? 'primary'][300]};
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -80,24 +92,31 @@ const Span = styled.span<{ description?: React.ReactNode }>`
   color: rgba(0, 0, 0, 0.85);
 `;
 
-const SpanContent = styled.span<{ description?: React.ReactNode }>`
+const AlertDescription = styled.span<{ description?: React.ReactNode }>`
   font-size: ${(props) => props.theme.typography.body1.fontSize}rem;
   display: ${(props) => (props.description ? 'block' : 'inline-block')};
   line-height: 22px;
 `;
 
-const ButtonContent = styled.button<{
+const renderButton = (props: {
+  description?: React.ReactNode;
+  message: React.ReactNode;
+}) => {
+  if (props.description && props.message) {
+    return '8px';
+  }
+  if (!props.description && props.message) {
+    return '10px';
+  }
+  return '16px';
+};
+
+const IconButton = styled.button<{
   description?: React.ReactNode;
   message: React.ReactNode;
 }>`
   position: absolute;
-  top: ${(props) =>
-    // eslint-disable-next-line no-nested-ternary
-    props.description && props.message
-      ? '8px'
-      : !props.description && props.message
-      ? '10px'
-      : '16px'};
+  top: ${(props) => renderButton(props)};
   right: 16px;
   overflow: hidden;
   font-size: 16px;
@@ -182,7 +201,7 @@ function Alert(props: Props) {
   };
 
   const closeIcon = closable ? (
-    <ButtonContent
+    <IconButton
       type="button"
       onClick={handleClose}
       tabIndex={0}
@@ -190,7 +209,7 @@ function Alert(props: Props) {
       data-testid="button"
     >
       <AiOutlineClose />
-    </ButtonContent>
+    </IconButton>
   ) : null;
 
   const iconMapFilled = {
@@ -221,7 +240,7 @@ function Alert(props: Props) {
         onEnter={onEnter}
         onExited={onExited}
       >
-        <Div
+        <AlertLayout
           showIcon={showIcon}
           description={description}
           type={type}
@@ -237,10 +256,12 @@ function Alert(props: Props) {
             <Span description={description} data-testid="span">
               {message}
             </Span>
-            <SpanContent description={description}>{description}</SpanContent>
+            <AlertDescription description={description}>
+              {description}
+            </AlertDescription>
           </div>
           {children}
-        </Div>
+        </AlertLayout>
       </CSSTransition>
       <Globalstyle />
     </>

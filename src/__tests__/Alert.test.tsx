@@ -64,7 +64,7 @@ describe('Alert 快照测试', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('设置显示辅助图标', () => {
+  it('辅助性文字介绍和辅助图标', () => {
     const tree = renderer
       .create(
         <TestWrapper>
