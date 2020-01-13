@@ -156,7 +156,7 @@ interface Props {
    */
   showIcon?: boolean;
   /**
-   * 默认不显示关闭按钮
+   * 是否显示关闭按钮，默认为false，即不展示
    */
   closable?: boolean;
   /**
@@ -171,6 +171,9 @@ interface Props {
    * 自定义类名
    */
   className?: string;
+  /**
+   * 子元素
+   */
   children?: React.ReactNode;
 }
 
