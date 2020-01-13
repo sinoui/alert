@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import Alert from 'src/Alert';
-import TestWrapper from './TestWrapper';
+import TestWrapper from '../TestWrapper';
 
 describe('Alert 快照测试', () => {
   it('渲染Alert', () => {

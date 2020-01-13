@@ -172,7 +172,12 @@ function Alert(props: Props) {
   };
 
   const closeIcon = closable ? (
-    <ButtonContent type="button" onClick={handleClose} tabIndex={0}>
+    <ButtonContent
+      type="button"
+      onClick={handleClose}
+      tabIndex={0}
+      data-testid="button"
+    >
       <MdClose />
     </ButtonContent>
   ) : null;
@@ -217,7 +222,9 @@ function Alert(props: Props) {
             </DenseIcon>
           ) : null}
           <div>
-            <Span description={description}>{message}</Span>
+            <Span description={description} data-testid="span">
+              {message}
+            </Span>
             <SpanContent description={description}>{description}</SpanContent>
           </div>
           {closeIcon}

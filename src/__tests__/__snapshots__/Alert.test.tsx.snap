@@ -95,6 +95,7 @@ exports[`Alert 快照测试 不同类型的警告提示 1`] = `
   <div>
     <span
       className="c2"
+      data-testid="span"
     >
       提示信息
     </span>
@@ -146,6 +147,7 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   <div>
     <span
       className="c1"
+      data-testid="span"
     >
       提示信息
     </span>
@@ -210,6 +212,7 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   <div>
     <span
       className="c1"
+      data-testid="span"
     >
       提示信息
     </span>
@@ -219,6 +222,7 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   </div>
   <button
     className="c3"
+    data-testid="button"
     onClick={[Function]}
     tabIndex={0}
     type="button"
@@ -340,6 +344,7 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   <div>
     <span
       className="c2"
+      data-testid="span"
     >
       提示信息
     </span>
@@ -448,6 +453,7 @@ exports[`Alert 快照测试 设置显示辅助图标 2`] = `
   <div>
     <span
       className="c2"
+      data-testid="span"
     >
       提示信息
     </span>
@@ -558,6 +564,7 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   <div>
     <span
       className="c2"
+      data-testid="span"
     >
       提示信息
     </span>
