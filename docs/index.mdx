@@ -3,69 +3,121 @@ name: 开始
 route: /
 ---
 
+import { Playground } from 'docz';
 import Alert from '../src/Alert';
 
-# 开始使用
+# @sinoui/alert
 
 警告提示，展现需要关注的信息。
 
+## 依赖安装
+
+```shell
+yarn add @sinoui/alert
+```
+
 ## 入门示例
 
-<Alert message="提示信息" />
+```tsx
+import React from 'react';
+import Alert from '@sinoui/alert';
+
+function Demo() {
+  return <Alert message="提示信息" />;
+}
+```
+
+<Playground>
+  {() => {
+    return <Alert message="提示信息" />;
+  }}
+</Playground>
 
 ## 设置显示关闭按钮
 
-<Alert message="提示信息" closable />
+<Playground>
+  {() => {
+    return <Alert message="提示信息" closable />;
+  }}
+</Playground>
 
 ## 设置显示辅助图标
 
-<Alert message="提示信息" showIcon />
+<Playground>
+  {() => {
+    return <Alert message="提示信息" showIcon />;
+  }}
+</Playground>
 
 ## 不同类型的警告提示
 
-<Alert message="提示信息" closable showIcon type="info" />
-<Alert message="提示信息" closable showIcon type="success" />
-<Alert message="提示信息" closable showIcon type="warning" />
-<Alert message="提示信息" closable showIcon type="error" />
+<Playground>
+  {() => {
+    return (
+      <>
+        <Alert message="提示信息" closable showIcon type="info" />
+        <Alert message="提示信息" closable showIcon type="success" />
+        <Alert message="提示信息" closable showIcon type="warning" />
+        <Alert message="提示信息" closable showIcon type="error" />
+      </>
+    )
+  }}
+</Playground>
 
 ## 设置辅助性文字介绍
 
-<Alert message="提示信息" description="辅助性文字介绍" closable />
+<Playground>
+  {() => {
+    return <Alert message="提示信息" description="辅助性文字介绍" closable />
+  }}
+</Playground>
 
 ## 设置辅助性文字介绍和辅助图标
 
-<Alert message="提示信息" description="辅助性文字介绍" showIcon type="info" />
+<Playground>
+  {() => {
+    return <Alert message="提示信息" description="辅助性文字介绍" showIcon type="info" />
+  }}
+</Playground>
 
 ## 不同类型辅助性文字介绍和辅助图标
 
-<Alert
-  message="提示信息"
-  description="辅助性文字介绍"
-  closable
-  showIcon
-  type="info"
-/>
-<Alert
-  message="提示信息"
-  description="辅助性文字介绍"
-  closable
-  showIcon
-  type="success"
-/>
-<Alert
-  message="提示信息"
-  description="辅助性文字介绍"
-  closable
-  showIcon
-  type="warning"
-/>
-<Alert
-  message="提示信息"
-  description="辅助性文字介绍"
-  closable
-  showIcon
-  type="error"
-/>
+<Playground>
+  {() => {
+    return (
+      <>
+        <Alert
+          message="提示信息"
+          description="辅助性文字介绍"
+          closable
+          showIcon
+          type="info"
+        />
+        <Alert
+          message="提示信息"
+          description="辅助性文字介绍"
+          closable
+          showIcon
+          type="success"
+        />
+        <Alert
+          message="提示信息"
+          description="辅助性文字介绍"
+          closable
+          showIcon
+          type="warning"
+        />
+        <Alert
+          message="提示信息"
+          description="辅助性文字介绍"
+          closable
+          showIcon
+          type="error"
+        />
+      </>
+      )
+    }}
+</Playground>
 
 ## API
 

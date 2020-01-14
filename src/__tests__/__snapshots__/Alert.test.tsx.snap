@@ -1,5 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Alert 快照测试 children测试 1`] = `
+.c0 {
+  position: relative;
+  padding: 8px 34px 8px 15px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: #e8eaf6;
+  border: 1px solid #c5cae9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+
+.c1 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c2 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+<div
+  className="c0 sinoui-alert sinoui-alert--info"
+  role="alert"
+  type="info"
+>
+  <div>
+    <span
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    />
+  </div>
+</div>
+`;
+
 exports[`Alert 快照测试 不同类型的警告提示 1`] = `
 Array [
   .c0 {
@@ -412,6 +464,611 @@ Array [
       <span
         className="c3 sinoui-alert-description"
       />
+    </div>
+  </div>,
+]
+`;
+
+exports[`Alert 快照测试 不同类型辅助性文字介绍和辅助图标 1`] = `
+Array [
+  .c0 {
+  position: relative;
+  padding: 15px 34px 15px 64px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: #e8eaf6;
+  border: 1px solid #c5cae9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  color: rgba(0,0,0,0.54);
+}
+
+.c2 {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  max-width: 1em;
+  display: inline-block;
+  text-transform: none;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  color: currentColor;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  color: #3f51b5;
+  font-size: 24px;
+  margin-right: 8px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+}
+
+<div
+    className="c0 sinoui-alert sinoui-alert--info sinoui-alert--show-description sinoui-alert--closable sinoui-alert--show-icon"
+    role="alert"
+    type="info"
+  >
+    <button
+      aria-label="closeButton"
+      className="c1"
+      data-testid="closeButton"
+      onClick={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+        />
+      </svg>
+    </button>
+    <span
+      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
+      color="primary"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+        />
+        <path
+          d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"
+        />
+      </svg>
+    </span>
+    <div>
+      <span
+        className="c3 sinoui-alert-message"
+        data-testid="alertMessage"
+      >
+        提示信息
+      </span>
+      <span
+        className="c4 sinoui-alert-description"
+      >
+        辅助性文字介绍
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  position: relative;
+  padding: 15px 34px 15px 64px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  color: rgba(0,0,0,0.54);
+}
+
+.c2 {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  max-width: 1em;
+  display: inline-block;
+  text-transform: none;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  color: currentColor;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  color: #00c853;
+  font-size: 24px;
+  margin-right: 8px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+}
+
+<div
+    className="c0 sinoui-alert sinoui-alert--success sinoui-alert--show-description sinoui-alert--closable sinoui-alert--show-icon"
+    role="alert"
+    type="success"
+  >
+    <button
+      aria-label="closeButton"
+      className="c1"
+      data-testid="closeButton"
+      onClick={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+        />
+      </svg>
+    </button>
+    <span
+      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
+      color="success"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z"
+        />
+        <path
+          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+        />
+      </svg>
+    </span>
+    <div>
+      <span
+        className="c3 sinoui-alert-message"
+        data-testid="alertMessage"
+      >
+        提示信息
+      </span>
+      <span
+        className="c4 sinoui-alert-description"
+      >
+        辅助性文字介绍
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  position: relative;
+  padding: 15px 34px 15px 64px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: #fff8e1;
+  border: 1px solid #ffecb3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  color: rgba(0,0,0,0.54);
+}
+
+.c2 {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  max-width: 1em;
+  display: inline-block;
+  text-transform: none;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  color: currentColor;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  color: #ffc107;
+  font-size: 24px;
+  margin-right: 8px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+}
+
+<div
+    className="c0 sinoui-alert sinoui-alert--warning sinoui-alert--show-description sinoui-alert--closable sinoui-alert--show-icon"
+    role="alert"
+    type="warning"
+  >
+    <button
+      aria-label="closeButton"
+      className="c1"
+      data-testid="closeButton"
+      onClick={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+        />
+      </svg>
+    </button>
+    <span
+      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
+      color="warning"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+        />
+        <path
+          d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm24-112h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"
+        />
+      </svg>
+    </span>
+    <div>
+      <span
+        className="c3 sinoui-alert-message"
+        data-testid="alertMessage"
+      >
+        提示信息
+      </span>
+      <span
+        className="c4 sinoui-alert-description"
+      >
+        辅助性文字介绍
+      </span>
+    </div>
+  </div>,
+  .c0 {
+  position: relative;
+  padding: 15px 34px 15px 64px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+
+.c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  color: rgba(0,0,0,0.54);
+}
+
+.c2 {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  max-width: 1em;
+  display: inline-block;
+  text-transform: none;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  color: currentColor;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  color: #e53935;
+  font-size: 24px;
+  margin-right: 8px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+}
+
+<div
+    className="c0 sinoui-alert sinoui-alert--error sinoui-alert--show-description sinoui-alert--closable sinoui-alert--show-icon"
+    role="alert"
+    type="error"
+  >
+    <button
+      aria-label="closeButton"
+      className="c1"
+      data-testid="closeButton"
+      onClick={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+        />
+      </svg>
+    </button>
+    <span
+      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
+      color="error"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"
+        />
+        <path
+          d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+        />
+      </svg>
+    </span>
+    <div>
+      <span
+        className="c3 sinoui-alert-message"
+        data-testid="alertMessage"
+      >
+        提示信息
+      </span>
+      <span
+        className="c4 sinoui-alert-description"
+      >
+        辅助性文字介绍
+      </span>
     </div>
   </div>,
 ]
