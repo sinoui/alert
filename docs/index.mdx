@@ -35,6 +35,12 @@ function Demo() {
 
 ## 设置显示关闭按钮
 
+是否显示关闭按钮设置属性`closable`
+
+```test
+<Alert message="提示信息" closable />
+```
+
 <Playground>
   {() => {
     return <Alert message="提示信息" closable />;
@@ -43,6 +49,12 @@ function Demo() {
 
 ## 设置显示辅助图标
 
+是否显示辅助图标设置属性`showIcon`
+
+```test
+<Alert message="提示信息" showIcon />
+```
+
 <Playground>
   {() => {
     return <Alert message="提示信息" showIcon />;
@@ -50,6 +62,15 @@ function Demo() {
 </Playground>
 
 ## 不同类型的警告提示
+
+指定警告提示的样式`type`，有四种选择 success、info、warning、error
+
+```test
+<Alert message="提示信息" closable showIcon type="info" />
+<Alert message="提示信息" closable showIcon type="success" />
+<Alert message="提示信息" closable showIcon type="warning" />
+<Alert message="提示信息" closable showIcon type="error" />
+```
 
 <Playground>
   {() => {
@@ -66,6 +87,12 @@ function Demo() {
 
 ## 设置辅助性文字介绍
 
+辅助性文字介绍属性`description`
+
+```test
+<Alert message="提示信息" description="辅助性文字介绍" closable />
+```
+
 <Playground>
   {() => {
     return <Alert message="提示信息" description="辅助性文字介绍" closable />
@@ -74,6 +101,10 @@ function Demo() {
 
 ## 设置辅助性文字介绍和辅助图标
 
+```test
+<Alert message="提示信息" description="辅助性文字介绍" showIcon type="info" />
+```
+
 <Playground>
   {() => {
     return <Alert message="提示信息" description="辅助性文字介绍" showIcon type="info" />
@@ -81,6 +112,15 @@ function Demo() {
 </Playground>
 
 ## 不同类型辅助性文字介绍和辅助图标
+
+指定警告提示的样式，有四种选择 success、info、warning、error
+
+```test
+<Alert message="提示信息" description="辅助性文字介绍" closable showIcon type="info" />
+<Alert message="提示信息" description="辅助性文字介绍" closable showIcon type="success" />
+<Alert message="提示信息" description="辅助性文字介绍" closable showIcon type="warning" />
+<Alert message="提示信息" description="辅助性文字介绍" closable showIcon type="error" />
+```
 
 <Playground>
   {() => {
@@ -118,6 +158,21 @@ function Demo() {
       )
     }}
 </Playground>
+
+## 关闭动画结束后触发的回调函数
+
+触发的回调函数属性`afterClose`
+
+<Playground>
+  {() => {
+      const afterClose=()=>{
+      alert('1')
+      }
+      return (     
+        <Alert message="提示信息" closable afterClose={afterClose} />
+      ) 
+  }}
+</Playground>  
 
 ## API
 
