@@ -8,12 +8,19 @@ const alertLayoutPaddingCss = (props: {
   description?: boolean;
   showIcon?: boolean;
   type?: 'info' | 'success' | 'warning' | 'error';
+  closable?: boolean;
 }) => {
-  if (props.showIcon && props.description) {
+  if (props.showIcon && props.description && props.closable) {
     return '15px 34px 15px 64px';
   }
-  if (props.showIcon && !props.description) {
+  if (props.showIcon && !props.description && props.closable) {
     return '8px 34px 8px 37px';
+  }
+  if (props.showIcon && props.description && !props.closable) {
+    return '15px 15px 15px 64px';
+  }
+  if (props.showIcon && !props.description && !props.closable) {
+    return '8px 15px 8px 37px';
   }
   return '8px 34px 8px 15px';
 };

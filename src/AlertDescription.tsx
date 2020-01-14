@@ -8,6 +8,7 @@ const AlertDescription = styled.span`
   font-size: ${(props) => props.theme.typography.body1.fontSize}rem;
   display: block;
   line-height: 1.5rem;
+  color: ${(props) => props.theme.typography.caption.color};
 `;
 
 export default AlertDescription;

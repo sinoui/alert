@@ -10,6 +10,9 @@ import Alert from '../src/Alert';
 
 警告提示，展现需要关注的信息。
 
+[![npm version](https://img.shields.io/npm/v/@sinoui/alert)](https://www.npmjs.com/package/@sinoui/alert)
+[![downloads](https://img.shields.io/npm/dm/@sinoui/alert)](https://www.npmjs.com/package/@sinoui/alert)
+
 ## 依赖安装
 
 ```shell
@@ -35,7 +38,7 @@ function Demo() {
 
 ## 设置显示关闭按钮
 
-是否显示关闭按钮设置属性`closable`
+设置 `closeable` 属性即可显示关闭按钮。
 
 ```test
 <Alert message="提示信息" closable />
@@ -49,7 +52,7 @@ function Demo() {
 
 ## 设置显示辅助图标
 
-是否显示辅助图标设置属性`showIcon`
+设置 `showIcon` 属性即可显示辅助图标。
 
 ```test
 <Alert message="提示信息" showIcon />
@@ -63,7 +66,7 @@ function Demo() {
 
 ## 不同类型的警告提示
 
-指定警告提示的样式`type`，有四种选择 success、info、warning、error
+设置`type`属性即可定义警告提示的样式，有四种选择 success、info、warning、error。
 
 ```test
 <Alert message="提示信息" closable showIcon type="info" />
@@ -87,7 +90,7 @@ function Demo() {
 
 ## 设置辅助性文字介绍
 
-辅助性文字介绍属性`description`
+设置`description`属性即可显示辅助性文字介绍。
 
 ```test
 <Alert message="提示信息" description="辅助性文字介绍" closable />
@@ -95,7 +98,7 @@ function Demo() {
 
 <Playground>
   {() => {
-    return <Alert message="提示信息" description="辅助性文字介绍" closable />
+    return <Alert message="提示信息" description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。" closable />
   }}
 </Playground>
 
@@ -107,13 +110,13 @@ function Demo() {
 
 <Playground>
   {() => {
-    return <Alert message="提示信息" description="辅助性文字介绍" showIcon type="info" />
+    return <Alert message="提示信息" description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。" showIcon type="info" />
   }}
 </Playground>
 
 ## 不同类型辅助性文字介绍和辅助图标
 
-指定警告提示的样式，有四种选择 success、info、warning、error
+设置`type`属性即可定义警告提示的样式，有四种选择 success、info、warning、error。
 
 ```test
 <Alert message="提示信息" description="辅助性文字介绍" closable showIcon type="info" />
@@ -128,28 +131,28 @@ function Demo() {
       <>
         <Alert
           message="提示信息"
-          description="辅助性文字介绍"
+          description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。"
           closable
           showIcon
           type="info"
         />
         <Alert
           message="提示信息"
-          description="辅助性文字介绍"
+          description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。"
           closable
           showIcon
           type="success"
         />
         <Alert
           message="提示信息"
-          description="辅助性文字介绍"
+          description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。"
           closable
           showIcon
           type="warning"
         />
         <Alert
           message="提示信息"
-          description="辅助性文字介绍"
+          description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。"
           closable
           showIcon
           type="error"
@@ -161,12 +164,12 @@ function Demo() {
 
 ## 关闭动画结束后触发的回调函数
 
-触发的回调函数属性`afterClose`
+设置`afterClose`属性即可触发的回调函数。
 
 <Playground>
   {() => {
       const afterClose=()=>{
-      alert('1')
+      alert('提示框关闭动画结束')
       }
       return (     
         <Alert message="提示信息" closable afterClose={afterClose} />
@@ -174,17 +177,41 @@ function Demo() {
   }}
 </Playground>  
 
+## 深色背景
+
+import { ThemeProvider } from 'styled-components';
+import { defaultTheme, createTheme, createPalette } from '@sinoui/theme';
+import { pink, green } from '@sinoui/theme/colors';
+
+<Playground>
+  {() => {
+    const theme = createTheme({
+    palette: createPalette({
+      type: 'dark', // 渲染黑色背景
+    }),
+  });
+  return (    
+    <ThemeProvider theme={theme}> 
+      <Alert message="提示信息" description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。" closable showIcon type="info" />
+      <Alert message="提示信息" description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。" closable showIcon type="success" />
+      <Alert message="提示信息" description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。" closable showIcon type="warning" />
+      <Alert message="提示信息" description="React 使创建交互式 UI 变得轻而易举。为你应用的每一个状态设计简洁的视图，当数据改变时 React 能有效地更新并正确地渲染组件。以声明式编写 UI，可以让你的代码更加可靠，且方便调试。创建拥有各自状态的组件，再由这些组件构成更加复杂的 UI。" closable showIcon type="error" />
+    </ThemeProvider>
+  ) 
+  }}
+</Playground>  
+
 ## API
 
-参数解析：
+Alert组件属性：
 
 | 参数名称    | 参数类型        | 说明                                                         |
 | ----------- | --------------- | ------------------------------------------------------------ |
-| afterClose  | () => void      | 关闭动画结束后触发的回调函数                                 |
-| closable    | boolean         | 是否显示关闭按钮，默认为 false，即不展示                     |
-| description | ReactNode       | 警告提示的辅助性文字介绍                                     |
 | message     | ReactNode       | 警告提示内容                                                 |
-| children    | React.ReactNode | 子元素，相当于 message，message 和 children 有一个有即可     |
-| showIcon    | boolean         | 是否显示辅助图标                                             |
+| children    | React.ReactNode | 子元素，相当于 message   |
 | type        | string          | 指定警告提示的样式，有四种选择 success、info、warning、error |
+| description | ReactNode       | 警告提示的辅助性文字介绍                                     |
+| showIcon    | boolean         | 是否显示辅助图标                                             |
+| closable    | boolean         | 是否显示关闭按钮，默认为 false，即不展示                     |
+| afterClose  | () => void      | 关闭动画结束后触发的回调函数                                 |
 | className   | string          | 自定义类名                                                   |

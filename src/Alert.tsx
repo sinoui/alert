@@ -153,6 +153,7 @@ function Alert(props: Props) {
         <AlertLayout
           showIcon={showIcon}
           description={!!description}
+          closable={!!closable}
           type={type}
           className={classNames(
             'sinoui-alert',

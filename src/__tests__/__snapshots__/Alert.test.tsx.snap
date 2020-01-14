@@ -11,6 +11,7 @@ exports[`Alert 快照测试 children测试 1`] = `
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
@@ -64,11 +65,12 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
   position: relative;
-  padding: 8px 34px 8px 37px;
+  padding: 8px 15px 8px 37px;
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
@@ -167,11 +169,12 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
   position: relative;
-  padding: 8px 34px 8px 37px;
+  padding: 8px 15px 8px 37px;
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
@@ -270,11 +273,12 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
   position: relative;
-  padding: 8px 34px 8px 37px;
+  padding: 8px 15px 8px 37px;
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
@@ -373,11 +377,12 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
   position: relative;
-  padding: 8px 34px 8px 37px;
+  padding: 8px 15px 8px 37px;
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
@@ -482,6 +487,7 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
@@ -632,6 +638,7 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
@@ -782,6 +789,7 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
@@ -932,6 +940,7 @@ Array [
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
@@ -1085,6 +1094,7 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
@@ -1137,6 +1147,7 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
@@ -1230,11 +1241,12 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
   position: relative;
-  padding: 8px 34px 8px 37px;
+  padding: 8px 15px 8px 37px;
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
@@ -1337,11 +1349,12 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
   position: relative;
-  padding: 15px 34px 15px 64px;
+  padding: 15px 15px 15px 64px;
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
@@ -1449,11 +1462,12 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
+  color: rgba(0,0,0,0.54);
 }
 
 .c0 {
   position: relative;
-  padding: 15px 34px 15px 64px;
+  padding: 15px 15px 15px 64px;
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
