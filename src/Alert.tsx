@@ -88,8 +88,7 @@ const iconMapOutlined = {
 };
 
 function Alert(props: Props) {
-  const [closed, setClosed] = useState(false);
-  const [closing, setClosing] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   const {
     message,
@@ -99,6 +98,7 @@ function Alert(props: Props) {
     type = 'info',
     showIcon,
     className,
+    afterClose,
   } = props;
 
   if (process.env.NODE_ENV === 'development') {
@@ -106,20 +106,7 @@ function Alert(props: Props) {
   }
 
   const handleClose = () => {
-    setClosing(true);
-  };
-
-  const onEnter = () => {
-    setClosing(false);
-  };
-
-  const handleOnExited = () => {
-    setClosing(false);
-    setClosed(true);
-
-    if (props.afterClose) {
-      props.afterClose();
-    }
+    setIsVisible(false);
   };
 
   const ref = useRipple<HTMLButtonElement>();
@@ -140,15 +127,14 @@ function Alert(props: Props) {
 
   const IconType = (description ? iconMapOutlined : iconMapFilled)[type];
 
-  return !closed ? (
+  return (
     <>
       <CSSTransition
-        in={closing}
+        in={isVisible}
         timeout={timeout}
         classNames="sinoui-alert"
-        unmountOnExit={false}
-        onEnter={onEnter}
-        onExited={handleOnExited}
+        onExited={afterClose}
+        unmountOnExit
       >
         <AlertLayout
           showIcon={showIcon}
@@ -192,7 +178,7 @@ function Alert(props: Props) {
       </CSSTransition>
       <Globalstyle />
     </>
-  ) : null;
+  );
 }
 
 export default Alert;
