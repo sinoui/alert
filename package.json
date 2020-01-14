@@ -73,7 +73,10 @@
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "@babel/runtime": "^7.7.7",
+    "@sinoui/ripple": "^1.0.7",
     "@sinoui/theme": "^0.3.5",
+    "assert": "^2.0.0",
+    "classnames": "^2.2.6",
     "react-icons": "^3.8.0",
     "react-transition-group": "^4.3.0",
     "sinoui-components": "^0.2.9",
@@ -84,6 +87,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
+    "@types/classnames": "^2.2.9",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "@types/react-transition-group": "^4.2.3",

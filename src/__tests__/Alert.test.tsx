@@ -2,7 +2,11 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import Alert from 'src/Alert';
-import TestWrapper from '../TestWrapper';
+import TestWrapper from './TestWrapper';
+
+/**
+ * Alert 快照测试
+ */
 
 describe('Alert 快照测试', () => {
   it('渲染Alert', () => {
@@ -45,6 +49,9 @@ describe('Alert 快照测试', () => {
       .create(
         <TestWrapper>
           <Alert message="提示信息" showIcon type="success" />
+          <Alert message="提示信息" showIcon type="info" />
+          <Alert message="提示信息" showIcon type="warning" />
+          <Alert message="提示信息" showIcon type="error" />
         </TestWrapper>,
       )
       .toJSON();
