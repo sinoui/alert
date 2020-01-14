@@ -22,13 +22,6 @@ exports[`Alert 快照测试 children测试 1`] = `
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -39,29 +32,27 @@ exports[`Alert 快照测试 children测试 1`] = `
   role="alert"
   type="info"
 >
-  <div>
-    <span
-      className="c1 sinoui-alert-message"
-      data-testid="alertMessage"
-    >
-      提示信息
-    </span>
-    <span
-      className="c2 sinoui-alert-description"
-    />
-  </div>
+  <span
+    className="c1 sinoui-alert-message"
+    data-testid="alertMessage"
+  >
+    提示信息
+  </span>
+  <span
+    className="c2 sinoui-alert-description"
+  />
 </div>
 `;
 
 exports[`Alert 快照测试 不同类型的警告提示 1`] = `
 Array [
-  .c2 {
+  .c1 {
   display: block;
   font-size: 0.875rem;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -76,19 +67,12 @@ Array [
   border-radius: 4px;
   background-color: #e8f5e9;
   border: 1px solid #c8e6c9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
+.c3 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -110,13 +94,14 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #00c853;
+  color: currentColor;
+  display: block;
   font-size: 16px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 16px;
+  color: #4caf50;
 }
 
 <div
@@ -125,8 +110,18 @@ Array [
     type="success"
   >
     <span
-      className="c1 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="success"
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    />
+    <span
+      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="success"
     >
       <svg
         fill="currentColor"
@@ -147,25 +142,14 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c2 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c3 sinoui-alert-description"
-      />
-    </div>
   </div>,
-  .c2 {
+  .c1 {
   display: block;
   font-size: 0.875rem;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -180,19 +164,12 @@ Array [
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
+.c3 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -214,13 +191,14 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #3f51b5;
+  color: currentColor;
+  display: block;
   font-size: 16px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 16px;
+  color: #3f51b5;
 }
 
 <div
@@ -229,8 +207,18 @@ Array [
     type="info"
   >
     <span
-      className="c1 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="primary"
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    />
+    <span
+      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="primary"
     >
       <svg
         fill="currentColor"
@@ -251,25 +239,14 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c2 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c3 sinoui-alert-description"
-      />
-    </div>
   </div>,
-  .c2 {
+  .c1 {
   display: block;
   font-size: 0.875rem;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -284,19 +261,12 @@ Array [
   border-radius: 4px;
   background-color: #fff8e1;
   border: 1px solid #ffecb3;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
+.c3 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -318,13 +288,14 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #ffc107;
+  color: currentColor;
+  display: block;
   font-size: 16px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 16px;
+  color: #ffc107;
 }
 
 <div
@@ -333,8 +304,18 @@ Array [
     type="warning"
   >
     <span
-      className="c1 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="warning"
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    />
+    <span
+      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="warning"
     >
       <svg
         fill="currentColor"
@@ -355,25 +336,14 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c2 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c3 sinoui-alert-description"
-      />
-    </div>
   </div>,
-  .c2 {
+  .c1 {
   display: block;
   font-size: 0.875rem;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -388,19 +358,12 @@ Array [
   border-radius: 4px;
   background-color: #ffebee;
   border: 1px solid #ffcdd2;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
+.c3 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -422,13 +385,14 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #e53935;
+  color: currentColor;
+  display: block;
   font-size: 16px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 16px;
+  color: #f44336;
 }
 
 <div
@@ -437,8 +401,18 @@ Array [
     type="error"
   >
     <span
-      className="c1 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="error"
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    />
+    <span
+      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="error"
     >
       <svg
         fill="currentColor"
@@ -459,31 +433,20 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c2 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c3 sinoui-alert-description"
-      />
-    </div>
   </div>,
 ]
 `;
 
 exports[`Alert 快照测试 不同类型辅助性文字介绍和辅助图标 1`] = `
 Array [
-  .c3 {
+  .c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
   color: rgba(0,0,0,0.87);
 }
 
-.c4 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -498,33 +461,12 @@ Array [
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 22px;
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  color: rgba(0,0,0,0.54);
-}
-
-.c2 {
+.c5 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -546,13 +488,84 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #3f51b5;
+  color: currentColor;
+  display: block;
   font-size: 24px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 24px;
+  color: #3f51b5;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer-events: default;
+  color: #3f51b5;
+  width: 32px;
+  height: 32px;
+}
+
+.c3::-moz-focus-inner {
+  border-style: none;
+}
+
+.c3 .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c3 .sinoui-icon-button__ripple-dense {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout-dense {
+  left: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.54);
 }
 
 <div
@@ -560,12 +573,24 @@ Array [
     role="alert"
     type="info"
   >
+    <span
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    >
+      辅助性文字介绍
+    </span>
     <button
-      aria-label="closeButton"
-      className="c1"
+      aria-label="Close"
+      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
       data-testid="closeButton"
+      description={true}
       onClick={[Function]}
-      tabIndex={0}
+      role="button"
       type="button"
     >
       <svg
@@ -588,8 +613,9 @@ Array [
       </svg>
     </button>
     <span
-      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="primary"
+      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="primary"
     >
       <svg
         fill="currentColor"
@@ -613,28 +639,15 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c3 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c4 sinoui-alert-description"
-      >
-        辅助性文字介绍
-      </span>
-    </div>
   </div>,
-  .c3 {
+  .c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
   color: rgba(0,0,0,0.87);
 }
 
-.c4 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -649,33 +662,12 @@ Array [
   border-radius: 4px;
   background-color: #e8f5e9;
   border: 1px solid #c8e6c9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 22px;
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  color: rgba(0,0,0,0.54);
-}
-
-.c2 {
+.c5 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -697,13 +689,84 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #00c853;
+  color: currentColor;
+  display: block;
   font-size: 24px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 24px;
+  color: #4caf50;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer-events: default;
+  color: #3f51b5;
+  width: 32px;
+  height: 32px;
+}
+
+.c3::-moz-focus-inner {
+  border-style: none;
+}
+
+.c3 .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c3 .sinoui-icon-button__ripple-dense {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout-dense {
+  left: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.54);
 }
 
 <div
@@ -711,12 +774,24 @@ Array [
     role="alert"
     type="success"
   >
+    <span
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    >
+      辅助性文字介绍
+    </span>
     <button
-      aria-label="closeButton"
-      className="c1"
+      aria-label="Close"
+      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
       data-testid="closeButton"
+      description={true}
       onClick={[Function]}
-      tabIndex={0}
+      role="button"
       type="button"
     >
       <svg
@@ -739,8 +814,9 @@ Array [
       </svg>
     </button>
     <span
-      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="success"
+      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="success"
     >
       <svg
         fill="currentColor"
@@ -764,28 +840,15 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c3 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c4 sinoui-alert-description"
-      >
-        辅助性文字介绍
-      </span>
-    </div>
   </div>,
-  .c3 {
+  .c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
   color: rgba(0,0,0,0.87);
 }
 
-.c4 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -800,33 +863,12 @@ Array [
   border-radius: 4px;
   background-color: #fff8e1;
   border: 1px solid #ffecb3;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 22px;
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  color: rgba(0,0,0,0.54);
-}
-
-.c2 {
+.c5 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -848,13 +890,84 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #ffc107;
+  color: currentColor;
+  display: block;
   font-size: 24px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 24px;
+  color: #ffc107;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer-events: default;
+  color: #3f51b5;
+  width: 32px;
+  height: 32px;
+}
+
+.c3::-moz-focus-inner {
+  border-style: none;
+}
+
+.c3 .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c3 .sinoui-icon-button__ripple-dense {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout-dense {
+  left: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.54);
 }
 
 <div
@@ -862,12 +975,24 @@ Array [
     role="alert"
     type="warning"
   >
+    <span
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    >
+      辅助性文字介绍
+    </span>
     <button
-      aria-label="closeButton"
-      className="c1"
+      aria-label="Close"
+      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
       data-testid="closeButton"
+      description={true}
       onClick={[Function]}
-      tabIndex={0}
+      role="button"
       type="button"
     >
       <svg
@@ -890,8 +1015,9 @@ Array [
       </svg>
     </button>
     <span
-      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="warning"
+      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="warning"
     >
       <svg
         fill="currentColor"
@@ -915,28 +1041,15 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c3 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c4 sinoui-alert-description"
-      >
-        辅助性文字介绍
-      </span>
-    </div>
   </div>,
-  .c3 {
+  .c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
   color: rgba(0,0,0,0.87);
 }
 
-.c4 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -951,33 +1064,12 @@ Array [
   border-radius: 4px;
   background-color: #ffebee;
   border: 1px solid #ffcdd2;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 22px;
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  color: rgba(0,0,0,0.54);
-}
-
-.c2 {
+.c5 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -999,13 +1091,84 @@ Array [
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #e53935;
+  color: currentColor;
+  display: block;
   font-size: 24px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 24px;
+  color: #f44336;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer-events: default;
+  color: #3f51b5;
+  width: 32px;
+  height: 32px;
+}
+
+.c3::-moz-focus-inner {
+  border-style: none;
+}
+
+.c3 .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c3 .sinoui-icon-button__ripple-dense {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout-dense {
+  left: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.54);
 }
 
 <div
@@ -1013,12 +1176,24 @@ Array [
     role="alert"
     type="error"
   >
+    <span
+      className="c1 sinoui-alert-message"
+      data-testid="alertMessage"
+    >
+      提示信息
+    </span>
+    <span
+      className="c2 sinoui-alert-description"
+    >
+      辅助性文字介绍
+    </span>
     <button
-      aria-label="closeButton"
-      className="c1"
+      aria-label="Close"
+      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
       data-testid="closeButton"
+      description={true}
       onClick={[Function]}
-      tabIndex={0}
+      role="button"
       type="button"
     >
       <svg
@@ -1041,8 +1216,9 @@ Array [
       </svg>
     </button>
     <span
-      className="c2 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-      color="error"
+      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      color="currentColor"
+      type="error"
     >
       <svg
         fill="currentColor"
@@ -1066,19 +1242,6 @@ Array [
         />
       </svg>
     </span>
-    <div>
-      <span
-        className="c3 sinoui-alert-message"
-        data-testid="alertMessage"
-      >
-        提示信息
-      </span>
-      <span
-        className="c4 sinoui-alert-description"
-      >
-        辅助性文字介绍
-      </span>
-    </div>
   </div>,
 ]
 `;
@@ -1105,13 +1268,6 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1122,28 +1278,26 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   role="alert"
   type="info"
 >
-  <div>
-    <span
-      className="c1 sinoui-alert-message"
-      data-testid="alertMessage"
-    >
-      提示信息
-    </span>
-    <span
-      className="c2 sinoui-alert-description"
-    />
-  </div>
+  <span
+    className="c1 sinoui-alert-message"
+    data-testid="alertMessage"
+  >
+    提示信息
+  </span>
+  <span
+    className="c2 sinoui-alert-description"
+  />
 </div>
 `;
 
 exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
-.c2 {
+.c1 {
   display: block;
   font-size: 0.875rem;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -1158,29 +1312,78 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 22px;
-  border: 0;
-  cursor: pointer;
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   background-color: transparent;
   outline: none;
+  border: 0px;
+  padding: 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer-events: default;
+  color: #3f51b5;
+  width: 32px;
+  height: 32px;
+}
+
+.c3::-moz-focus-inner {
+  border-style: none;
+}
+
+.c3 .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c3 .sinoui-icon-button__ripple-dense {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.c3 .sinoui-icon-button__ripple-layout-dense {
+  left: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  font-size: 12px;
   color: rgba(0,0,0,0.54);
 }
 
@@ -1189,12 +1392,22 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   role="alert"
   type="info"
 >
+  <span
+    className="c1 sinoui-alert-message"
+    data-testid="alertMessage"
+  >
+    提示信息
+  </span>
+  <span
+    className="c2 sinoui-alert-description"
+  />
   <button
-    aria-label="closeButton"
-    className="c1"
+    aria-label="Close"
+    className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
     data-testid="closeButton"
+    description={false}
     onClick={[Function]}
-    tabIndex={0}
+    role="button"
     type="button"
   >
     <svg
@@ -1216,28 +1429,17 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
       />
     </svg>
   </button>
-  <div>
-    <span
-      className="c2 sinoui-alert-message"
-      data-testid="alertMessage"
-    >
-      提示信息
-    </span>
-    <span
-      className="c3 sinoui-alert-description"
-    />
-  </div>
 </div>
 `;
 
 exports[`Alert 快照测试 设置显示辅助图标 1`] = `
-.c2 {
+.c1 {
   display: block;
   font-size: 0.875rem;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -1252,19 +1454,12 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
+.c3 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -1286,13 +1481,14 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #3f51b5;
+  color: currentColor;
+  display: block;
   font-size: 16px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 16px;
+  color: #3f51b5;
 }
 
 <div
@@ -1301,8 +1497,18 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   type="info"
 >
   <span
-    className="c1 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-    color="primary"
+    className="c1 sinoui-alert-message"
+    data-testid="alertMessage"
+  >
+    提示信息
+  </span>
+  <span
+    className="c2 sinoui-alert-description"
+  />
+  <span
+    className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+    color="currentColor"
+    type="primary"
   >
     <svg
       fill="currentColor"
@@ -1323,29 +1529,18 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
       />
     </svg>
   </span>
-  <div>
-    <span
-      className="c2 sinoui-alert-message"
-      data-testid="alertMessage"
-    >
-      提示信息
-    </span>
-    <span
-      className="c3 sinoui-alert-description"
-    />
-  </div>
 </div>
 `;
 
 exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
-.c2 {
+.c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -1360,19 +1555,12 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
+.c3 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -1394,13 +1582,14 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #3f51b5;
+  color: currentColor;
+  display: block;
   font-size: 24px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 24px;
+  color: #3f51b5;
 }
 
 <div
@@ -1409,8 +1598,20 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   type="info"
 >
   <span
-    className="c1 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-    color="primary"
+    className="c1 sinoui-alert-message"
+    data-testid="alertMessage"
+  >
+    提示信息
+  </span>
+  <span
+    className="c2 sinoui-alert-description"
+  >
+    辅助性文字介绍
+  </span>
+  <span
+    className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+    color="currentColor"
+    type="primary"
   >
     <svg
       fill="currentColor"
@@ -1434,31 +1635,18 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
       />
     </svg>
   </span>
-  <div>
-    <span
-      className="c2 sinoui-alert-message"
-      data-testid="alertMessage"
-    >
-      提示信息
-    </span>
-    <span
-      className="c3 sinoui-alert-description"
-    >
-      辅助性文字介绍
-    </span>
-  </div>
 </div>
 `;
 
 exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
-.c2 {
+.c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
   color: rgba(0,0,0,0.87);
 }
 
-.c3 {
+.c2 {
   font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
@@ -1473,19 +1661,12 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   border-radius: 4px;
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c1 {
+.c3 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -1507,13 +1688,14 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   color: currentColor;
   -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
   transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: #3f51b5;
+  color: currentColor;
+  display: block;
   font-size: 24px;
   margin-right: 8px;
-  height: 20px;
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 24px;
+  color: #3f51b5;
 }
 
 <div
@@ -1522,8 +1704,20 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   type="info"
 >
   <span
-    className="c1 sinoui-alert__close-button sinoui-icon sinoui-alert__close-button"
-    color="primary"
+    className="c1 sinoui-alert-message"
+    data-testid="alertMessage"
+  >
+    提示信息
+  </span>
+  <span
+    className="c2 sinoui-alert-description"
+  >
+    辅助性文字介绍
+  </span>
+  <span
+    className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+    color="currentColor"
+    type="primary"
   >
     <svg
       fill="currentColor"
@@ -1547,18 +1741,5 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
       />
     </svg>
   </span>
-  <div>
-    <span
-      className="c2 sinoui-alert-message"
-      data-testid="alertMessage"
-    >
-      提示信息
-    </span>
-    <span
-      className="c3 sinoui-alert-description"
-    >
-      辅助性文字介绍
-    </span>
-  </div>
 </div>
 `;

@@ -14,10 +14,12 @@ yarn add @sinoui/alert
 ## 简单示例
 
 ```tsx
-import React, { useState } from 'react';
+import React from 'react';
 import Alert from '@sinoui/alert';
 
-<Alert message="提示信息" />;
+function Demo() {
+  return <Alert message="提示信息" />;
+}
 ```
 
 更多示例请参考[官方文档](https://sinoui.github.io/alert/)。

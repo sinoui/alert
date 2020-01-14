@@ -29,6 +29,7 @@ const AlertLayout = styled.div<{
   description?: boolean;
   showIcon?: boolean;
   type: 'info' | 'success' | 'warning' | 'error';
+  closable?: boolean;
 }>`
   position: relative;
   padding: ${(props) => alertLayoutPaddingCss(props)};
@@ -40,7 +41,7 @@ const AlertLayout = styled.div<{
       ? props.theme.palette[props.type === 'info' ? 'primary' : props.type][50]
       : props.theme.palette[
           props.type === 'info' ? 'primary' : props.type
-        ][200]};
+        ][800]};
   border: 1px solid
     ${(props) =>
       props.theme.palette.type === 'light'
@@ -49,9 +50,8 @@ const AlertLayout = styled.div<{
           ][100]
         : props.theme.palette[
             props.type === 'info' ? 'primary' : props.type
-          ][300]};
-  display: flex;
-  flex-direction: row;
+          ][700]};
+
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;

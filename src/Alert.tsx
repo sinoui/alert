@@ -14,16 +14,11 @@ import {
 } from 'react-icons/ai';
 import classNames from 'classnames';
 import assert from 'assert';
-import { useRipple } from '@sinoui/ripple';
 import AlertMessage from './AlertMessage';
 import AlertDescription from './AlertDescription';
 import AlertLayout from './AlertLayout';
-import IconButton from './IconButton';
 import DenseIcon from './DenseIcon';
-
-/**
- * Alert组件  警告提示，展现需要关注的信息。
- */
+import CloseButton from './CloseButton';
 
 const timeout = 200;
 
@@ -34,7 +29,8 @@ const Globalstyle = createGlobalStyle`
   .sinoui-alert-exit-active {
     opacity: 0;
     transform: scale(0.9);
-    transition: opacity ${timeout}ms, transform ${timeout}ms;
+    height: 0!important;
+    transition: opacity ${timeout}ms, transform ${timeout}ms, height ${timeout}ms;
   }
 `;
 
@@ -87,6 +83,9 @@ const iconMapOutlined = {
   warning: AiOutlineExclamationCircle,
 };
 
+/**
+ * Alert组件  警告提示，展现需要关注的信息。
+ */
 function Alert(props: Props) {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -109,20 +108,17 @@ function Alert(props: Props) {
     setIsVisible(false);
   };
 
-  const ref = useRipple<HTMLButtonElement>();
-
   const closeIcon = closable ? (
-    <IconButton
-      type="button"
+    <CloseButton
+      dense
       onClick={handleClose}
-      tabIndex={0}
-      message={!!message}
+      description={!!description}
       data-testid="closeButton"
-      aria-label="closeButton"
-      ref={ref}
+      aria-label="Close"
+      className="sinoui-alert-close-button"
     >
       <AiOutlineClose />
-    </IconButton>
+    </CloseButton>
   ) : null;
 
   const IconType = (description ? iconMapOutlined : iconMapFilled)[type];
@@ -139,7 +135,7 @@ function Alert(props: Props) {
         <AlertLayout
           showIcon={showIcon}
           description={!!description}
-          closable={!!closable}
+          closable={closable}
           type={type}
           className={classNames(
             'sinoui-alert',
@@ -153,28 +149,26 @@ function Alert(props: Props) {
           )}
           role="alert"
         >
+          <AlertMessage
+            description={!!description}
+            data-testid="alertMessage"
+            className="sinoui-alert-message"
+          >
+            {message || children}
+          </AlertMessage>
+          <AlertDescription className="sinoui-alert-description">
+            {description}
+          </AlertDescription>
           {closeIcon}
           {showIcon ? (
             <DenseIcon
               description={!!description}
-              color={type === 'info' ? 'primary' : type}
-              className="sinoui-alert__close-button"
+              type={type === 'info' ? 'primary' : type}
+              className="sinoui-alert-icon"
             >
               <IconType />
             </DenseIcon>
           ) : null}
-          <div>
-            <AlertMessage
-              description={!!description}
-              data-testid="alertMessage"
-              className="sinoui-alert-message"
-            >
-              {message || children}
-            </AlertMessage>
-            <AlertDescription className="sinoui-alert-description">
-              {description}
-            </AlertDescription>
-          </div>
         </AlertLayout>
       </CSSTransition>
       <Globalstyle />

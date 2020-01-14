@@ -1381,16 +1381,15 @@
     escape-string-regexp "^1.0.5"
     lodash.deburr "^4.1.0"
 
-"@sinoui/ripple@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@sinoui/ripple/-/ripple-1.0.7.tgz#2c6e13dcf7c4b42d2789647142e5265d586246d1"
-  integrity sha512-YHAZy3YLp82tgaFNFCHL/k7hE5T4jiBKneuv8Y9HmoH3lpizS6ozyGLP8RKXg5pz4FB0Eg/R2/dewPbj1yzPxw==
+"@sinoui/ripple@^1.0.7", "@sinoui/ripple@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@sinoui/ripple/-/ripple-1.0.9.tgz#0019f7bfe8a28c2391bd3ab750470d175c3fe0dc"
+  integrity sha512-j0eSkFecg7QhqQhB3qs7GBUB0wNWp5T+xvT8sgDqIeDqWbN1HSpI00ZkQ/wWR34Be5lg8z0TmVnpP1D8/dD7CQ==
   dependencies:
     "@babel/polyfill" "^7.6.0"
     "@babel/runtime" "^7.6.3"
     dom-helpers "^3.4.0"
     keycode "^2.2.0"
-    styled-components "^4.4.0"
     warning "^4.0.3"
 
 "@sinoui/theme@^0.3.5":
@@ -8057,6 +8056,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -12274,7 +12278,7 @@ style-to-object@^0.2.1:
   dependencies:
     inline-style-parser "0.1.1"
 
-styled-components@^4.2.0, styled-components@^4.4.0, styled-components@^4.4.1:
+styled-components@^4.2.0, styled-components@^4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.4.1.tgz#e0631e889f01db67df4de576fedaca463f05c2f2"
   integrity sha512-RNqj14kYzw++6Sr38n7197xG33ipEOktGElty4I70IKzQF1jzaD1U4xQ+Ny/i03UUhHlC5NWEO+d8olRCDji6g==
