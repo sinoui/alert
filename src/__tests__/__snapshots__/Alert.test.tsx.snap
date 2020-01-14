@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert 快照测试 children测试 1`] = `
+.c1 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c2 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
 .c0 {
   position: relative;
   padding: 8px 34px 8px 15px;
@@ -19,18 +31,6 @@ exports[`Alert 快照测试 children测试 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c1 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c2 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 <div
@@ -54,7 +54,19 @@ exports[`Alert 快照测试 children测试 1`] = `
 
 exports[`Alert 快照测试 不同类型的警告提示 1`] = `
 Array [
-  .c0 {
+  .c2 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 8px 34px 8px 37px;
   color: rgba(0,0,0,0.65);
@@ -72,18 +84,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -157,7 +157,19 @@ Array [
       />
     </div>
   </div>,
-  .c0 {
+  .c2 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 8px 34px 8px 37px;
   color: rgba(0,0,0,0.65);
@@ -175,18 +187,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -260,7 +260,19 @@ Array [
       />
     </div>
   </div>,
-  .c0 {
+  .c2 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 8px 34px 8px 37px;
   color: rgba(0,0,0,0.65);
@@ -278,18 +290,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -363,7 +363,19 @@ Array [
       />
     </div>
   </div>,
-  .c0 {
+  .c2 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 8px 34px 8px 37px;
   color: rgba(0,0,0,0.65);
@@ -381,18 +393,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -471,7 +471,20 @@ Array [
 
 exports[`Alert 快照测试 不同类型辅助性文字介绍和辅助图标 1`] = `
 Array [
-  .c0 {
+  .c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 15px 34px 15px 64px;
   color: rgba(0,0,0,0.65);
@@ -489,19 +502,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c3 {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
-}
-
-.c4 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -621,7 +621,20 @@ Array [
       </span>
     </div>
   </div>,
-  .c0 {
+  .c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 15px 34px 15px 64px;
   color: rgba(0,0,0,0.65);
@@ -639,19 +652,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c3 {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
-}
-
-.c4 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -771,7 +771,20 @@ Array [
       </span>
     </div>
   </div>,
-  .c0 {
+  .c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 15px 34px 15px 64px;
   color: rgba(0,0,0,0.65);
@@ -789,19 +802,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c3 {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
-}
-
-.c4 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -921,7 +921,20 @@ Array [
       </span>
     </div>
   </div>,
-  .c0 {
+  .c3 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c4 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.c0 {
   position: relative;
   padding: 15px 34px 15px 64px;
   color: rgba(0,0,0,0.65);
@@ -939,19 +952,6 @@ Array [
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c3 {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
-}
-
-.c4 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -1075,6 +1075,18 @@ Array [
 `;
 
 exports[`Alert 快照测试 渲染Alert 1`] = `
+.c1 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c2 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
 .c0 {
   position: relative;
   padding: 8px 34px 8px 15px;
@@ -1093,18 +1105,6 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c1 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c2 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 <div
@@ -1127,6 +1127,18 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
 `;
 
 exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
+.c2 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
 .c0 {
   position: relative;
   padding: 8px 34px 8px 15px;
@@ -1145,18 +1157,6 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -1220,6 +1220,18 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
 `;
 
 exports[`Alert 快照测试 设置显示辅助图标 1`] = `
+.c2 {
+  display: block;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
 .c0 {
   position: relative;
   padding: 8px 34px 8px 37px;
@@ -1238,18 +1250,6 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -1326,6 +1326,19 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
 `;
 
 exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
+.c2 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
 .c0 {
   position: relative;
   padding: 15px 34px 15px 64px;
@@ -1344,19 +1357,6 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
@@ -1438,6 +1438,19 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
 `;
 
 exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
+.c2 {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+
+.c3 {
+  font-size: 0.875rem;
+  display: block;
+  line-height: 1.5rem;
+}
+
 .c0 {
   position: relative;
   padding: 15px 34px 15px 64px;
@@ -1456,19 +1469,6 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c2 {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
-}
-
-.c3 {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1.5rem;
 }
 
 .c1 {
