@@ -52,9 +52,6 @@
       "git add"
     ]
   },
-  "peerDependencies": {
-    "react": ">=16.8.0"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -80,8 +77,11 @@
     "lodash-es": "^4.17.15",
     "react-icons": "^3.8.0",
     "react-transition-group": "^4.3.0",
-    "sinoui-components": "^0.2.9",
-    "styled-components": "^4.4.1"
+    "sinoui-components": "^0.2.9"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "styled-components": ">=4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
