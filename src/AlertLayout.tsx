@@ -4,22 +4,25 @@ import styled from 'styled-components';
  * 外层容器组件
  */
 
-const alertLayoutPaddingCss = (props: {
+const alertLayoutPaddingCss = ({
+  description,
+  showIcon,
+  closable,
+}: {
   description?: boolean;
   showIcon?: boolean;
-  type?: 'info' | 'success' | 'warning' | 'error';
   closable?: boolean;
 }) => {
-  if (props.showIcon && props.description && props.closable) {
+  if (showIcon && description && closable) {
     return '15px 34px 15px 64px';
   }
-  if (props.showIcon && !props.description && props.closable) {
+  if (showIcon && !description && closable) {
     return '8px 34px 8px 37px';
   }
-  if (props.showIcon && props.description && !props.closable) {
+  if (showIcon && description && !closable) {
     return '15px 15px 15px 64px';
   }
-  if (props.showIcon && !props.description && !props.closable) {
+  if (showIcon && !description && !closable) {
     return '8px 15px 8px 37px';
   }
   return '8px 34px 8px 15px';
