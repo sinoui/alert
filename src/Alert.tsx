@@ -108,14 +108,21 @@ function Alert(props: Props) {
     setIsVisible(false);
   };
 
+  const rippleConfig = {
+    center: true,
+    rippleClassName: 'sinoui-alert-close__ripple',
+    rippleLayoutClassName: 'sinoui-alert-close__ripple-layout',
+    fixSize: true,
+  };
+
   const closeIcon = closable ? (
     <CloseButton
-      dense
       onClick={handleClose}
       description={!!description}
       data-testid="closeButton"
       aria-label="Close"
       className="sinoui-alert-close-button"
+      ripple={rippleConfig}
     >
       <AiOutlineClose />
     </CloseButton>

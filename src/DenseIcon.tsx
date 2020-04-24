@@ -6,7 +6,7 @@ const colorCss = css<{
 }>`
   color: ${(props) =>
     props.theme.palette[props.type][
-      props.theme.palette.type === 'dark' ? 100 : 500
+      props.theme.palette.type === 'dark' ? 'light' : 'dark'
     ]};
 `;
 

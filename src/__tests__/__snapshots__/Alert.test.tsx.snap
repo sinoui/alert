@@ -3,15 +3,15 @@
 exports[`Alert 快照测试 children测试 1`] = `
 .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -20,8 +20,8 @@ exports[`Alert 快照测试 children测试 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -48,15 +48,15 @@ exports[`Alert 快照测试 不同类型的警告提示 1`] = `
 Array [
   .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -65,8 +65,8 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8f5e9;
-  border: 1px solid #c8e6c9;
+  background-color: #b5dfb7;
+  border: 1px solid #75c378;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -101,7 +101,7 @@ Array [
   position: absolute;
   top: 8px;
   left: 16px;
-  color: #4caf50;
+  color: #388e3c;
 }
 
 <div
@@ -119,7 +119,7 @@ Array [
       className="c2 sinoui-alert-description"
     />
     <span
-      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="success"
     >
@@ -145,15 +145,15 @@ Array [
   </div>,
   .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -162,8 +162,8 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -198,7 +198,7 @@ Array [
   position: absolute;
   top: 8px;
   left: 16px;
-  color: #3f51b5;
+  color: #303f9f;
 }
 
 <div
@@ -216,7 +216,7 @@ Array [
       className="c2 sinoui-alert-description"
     />
     <span
-      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="primary"
     >
@@ -242,15 +242,15 @@ Array [
   </div>,
   .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -259,8 +259,8 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #fff8e1;
-  border: 1px solid #ffecb3;
+  background-color: #ffd699;
+  border: 1px solid #ffb13d;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -295,7 +295,7 @@ Array [
   position: absolute;
   top: 8px;
   left: 16px;
-  color: #ffc107;
+  color: #f57c00;
 }
 
 <div
@@ -313,7 +313,7 @@ Array [
       className="c2 sinoui-alert-description"
     />
     <span
-      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="warning"
     >
@@ -339,15 +339,15 @@ Array [
   </div>,
   .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -356,8 +356,8 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #ffebee;
-  border: 1px solid #ffcdd2;
+  background-color: #fccbc7;
+  border: 1px solid #f77970;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -392,7 +392,7 @@ Array [
   position: absolute;
   top: 8px;
   left: 16px;
-  color: #f44336;
+  color: #d32f2f;
 }
 
 <div
@@ -410,7 +410,7 @@ Array [
       className="c2 sinoui-alert-description"
     />
     <span
-      className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="error"
     >
@@ -443,14 +443,14 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -459,14 +459,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -495,7 +495,7 @@ Array [
   position: absolute;
   top: 13px;
   left: 24px;
-  color: #3f51b5;
+  color: #303f9f;
 }
 
 .c3 {
@@ -512,60 +512,92 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
   background-color: transparent;
-  outline: none;
+  outline: 0;
   border: 0px;
   padding: 0px;
-  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
   vertical-align: middle;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   pointer-events: default;
-  color: #3f51b5;
-  width: 32px;
-  height: 32px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3::-moz-focus-inner {
   border-style: none;
 }
 
-.c3 .sinoui-icon-button__ripple {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout {
-  left: 0px;
-  top: 0px;
-  width: 48px;
-  height: 48px;
-}
-
-.c3 .sinoui-icon-button__ripple-dense {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout-dense {
-  left: 0px;
-  top: 0px;
-  width: 32px;
-  height: 32px;
+.c3:hover {
+  background-color: rgba(0,0,0,0.04);
 }
 
 .c4 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.6);
+}
+
+.c4:hover {
+  background-color: rgba(0,0,0,0.04);
+}
+
+.c4 > .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c4 > .sinoui-icon-button__ripple-layout > .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+}
+
+.c5 {
   position: absolute;
   top: 10px;
   right: 8px;
   font-size: 14px;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple {
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple-layout {
+  width: 32px;
+  height: 32px;
+}
+
+@media (hover:none) {
+  .c3:hover {
+    background-color: transparent;
+  }
+}
+
+@media (hover:none) {
+  .c4:hover {
+    background-color: transparent;
+  }
 }
 
 <div
@@ -586,9 +618,9 @@ Array [
     </span>
     <button
       aria-label="Close"
-      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
+      className="c3 sinoui-base-button c4 sinoui-icon-button c5 sinoui-alert-close-button"
+      color="textSecondary"
       data-testid="closeButton"
-      description={true}
       onClick={[Function]}
       role="button"
       type="button"
@@ -613,7 +645,7 @@ Array [
       </svg>
     </button>
     <span
-      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="primary"
     >
@@ -644,14 +676,14 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -660,14 +692,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8f5e9;
-  border: 1px solid #c8e6c9;
+  background-color: #b5dfb7;
+  border: 1px solid #75c378;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -696,7 +728,7 @@ Array [
   position: absolute;
   top: 13px;
   left: 24px;
-  color: #4caf50;
+  color: #388e3c;
 }
 
 .c3 {
@@ -713,60 +745,92 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
   background-color: transparent;
-  outline: none;
+  outline: 0;
   border: 0px;
   padding: 0px;
-  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
   vertical-align: middle;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   pointer-events: default;
-  color: #3f51b5;
-  width: 32px;
-  height: 32px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3::-moz-focus-inner {
   border-style: none;
 }
 
-.c3 .sinoui-icon-button__ripple {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout {
-  left: 0px;
-  top: 0px;
-  width: 48px;
-  height: 48px;
-}
-
-.c3 .sinoui-icon-button__ripple-dense {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout-dense {
-  left: 0px;
-  top: 0px;
-  width: 32px;
-  height: 32px;
+.c3:hover {
+  background-color: rgba(0,0,0,0.04);
 }
 
 .c4 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.6);
+}
+
+.c4:hover {
+  background-color: rgba(0,0,0,0.04);
+}
+
+.c4 > .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c4 > .sinoui-icon-button__ripple-layout > .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+}
+
+.c5 {
   position: absolute;
   top: 10px;
   right: 8px;
   font-size: 14px;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple {
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple-layout {
+  width: 32px;
+  height: 32px;
+}
+
+@media (hover:none) {
+  .c3:hover {
+    background-color: transparent;
+  }
+}
+
+@media (hover:none) {
+  .c4:hover {
+    background-color: transparent;
+  }
 }
 
 <div
@@ -787,9 +851,9 @@ Array [
     </span>
     <button
       aria-label="Close"
-      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
+      className="c3 sinoui-base-button c4 sinoui-icon-button c5 sinoui-alert-close-button"
+      color="textSecondary"
       data-testid="closeButton"
-      description={true}
       onClick={[Function]}
       role="button"
       type="button"
@@ -814,7 +878,7 @@ Array [
       </svg>
     </button>
     <span
-      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="success"
     >
@@ -845,14 +909,14 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -861,14 +925,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #fff8e1;
-  border: 1px solid #ffecb3;
+  background-color: #ffd699;
+  border: 1px solid #ffb13d;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -897,7 +961,7 @@ Array [
   position: absolute;
   top: 13px;
   left: 24px;
-  color: #ffc107;
+  color: #f57c00;
 }
 
 .c3 {
@@ -914,60 +978,92 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
   background-color: transparent;
-  outline: none;
+  outline: 0;
   border: 0px;
   padding: 0px;
-  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
   vertical-align: middle;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   pointer-events: default;
-  color: #3f51b5;
-  width: 32px;
-  height: 32px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3::-moz-focus-inner {
   border-style: none;
 }
 
-.c3 .sinoui-icon-button__ripple {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout {
-  left: 0px;
-  top: 0px;
-  width: 48px;
-  height: 48px;
-}
-
-.c3 .sinoui-icon-button__ripple-dense {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout-dense {
-  left: 0px;
-  top: 0px;
-  width: 32px;
-  height: 32px;
+.c3:hover {
+  background-color: rgba(0,0,0,0.04);
 }
 
 .c4 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.6);
+}
+
+.c4:hover {
+  background-color: rgba(0,0,0,0.04);
+}
+
+.c4 > .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c4 > .sinoui-icon-button__ripple-layout > .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+}
+
+.c5 {
   position: absolute;
   top: 10px;
   right: 8px;
   font-size: 14px;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple {
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple-layout {
+  width: 32px;
+  height: 32px;
+}
+
+@media (hover:none) {
+  .c3:hover {
+    background-color: transparent;
+  }
+}
+
+@media (hover:none) {
+  .c4:hover {
+    background-color: transparent;
+  }
 }
 
 <div
@@ -988,9 +1084,9 @@ Array [
     </span>
     <button
       aria-label="Close"
-      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
+      className="c3 sinoui-base-button c4 sinoui-icon-button c5 sinoui-alert-close-button"
+      color="textSecondary"
       data-testid="closeButton"
-      description={true}
       onClick={[Function]}
       role="button"
       type="button"
@@ -1015,7 +1111,7 @@ Array [
       </svg>
     </button>
     <span
-      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="warning"
     >
@@ -1046,14 +1142,14 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -1062,14 +1158,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #ffebee;
-  border: 1px solid #ffcdd2;
+  background-color: #fccbc7;
+  border: 1px solid #f77970;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -1098,7 +1194,7 @@ Array [
   position: absolute;
   top: 13px;
   left: 24px;
-  color: #f44336;
+  color: #d32f2f;
 }
 
 .c3 {
@@ -1115,60 +1211,92 @@ Array [
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
   background-color: transparent;
-  outline: none;
+  outline: 0;
   border: 0px;
   padding: 0px;
-  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
   vertical-align: middle;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   pointer-events: default;
-  color: #3f51b5;
-  width: 32px;
-  height: 32px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3::-moz-focus-inner {
   border-style: none;
 }
 
-.c3 .sinoui-icon-button__ripple {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout {
-  left: 0px;
-  top: 0px;
-  width: 48px;
-  height: 48px;
-}
-
-.c3 .sinoui-icon-button__ripple-dense {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout-dense {
-  left: 0px;
-  top: 0px;
-  width: 32px;
-  height: 32px;
+.c3:hover {
+  background-color: rgba(0,0,0,0.04);
 }
 
 .c4 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.6);
+}
+
+.c4:hover {
+  background-color: rgba(0,0,0,0.04);
+}
+
+.c4 > .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c4 > .sinoui-icon-button__ripple-layout > .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+}
+
+.c5 {
   position: absolute;
   top: 10px;
   right: 8px;
   font-size: 14px;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple {
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple-layout {
+  width: 32px;
+  height: 32px;
+}
+
+@media (hover:none) {
+  .c3:hover {
+    background-color: transparent;
+  }
+}
+
+@media (hover:none) {
+  .c4:hover {
+    background-color: transparent;
+  }
 }
 
 <div
@@ -1189,9 +1317,9 @@ Array [
     </span>
     <button
       aria-label="Close"
-      className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
+      className="c3 sinoui-base-button c4 sinoui-icon-button c5 sinoui-alert-close-button"
+      color="textSecondary"
       data-testid="closeButton"
-      description={true}
       onClick={[Function]}
       role="button"
       type="button"
@@ -1216,7 +1344,7 @@ Array [
       </svg>
     </button>
     <span
-      className="c5 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
       color="currentColor"
       type="error"
     >
@@ -1249,15 +1377,15 @@ Array [
 exports[`Alert 快照测试 渲染Alert 1`] = `
 .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -1266,8 +1394,8 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1293,15 +1421,15 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
 exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
 .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -1310,8 +1438,8 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1331,60 +1459,92 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
   background-color: transparent;
-  outline: none;
+  outline: 0;
   border: 0px;
   padding: 0px;
-  cursor: pointer;
+  margin: 0;
+  border-radius: 0;
   vertical-align: middle;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   pointer-events: default;
-  color: #3f51b5;
-  width: 32px;
-  height: 32px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3::-moz-focus-inner {
   border-style: none;
 }
 
-.c3 .sinoui-icon-button__ripple {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout {
-  left: 0px;
-  top: 0px;
-  width: 48px;
-  height: 48px;
-}
-
-.c3 .sinoui-icon-button__ripple-dense {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-}
-
-.c3 .sinoui-icon-button__ripple-layout-dense {
-  left: 0px;
-  top: 0px;
-  width: 32px;
-  height: 32px;
+.c3:hover {
+  background-color: rgba(0,0,0,0.04);
 }
 
 .c4 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.6);
+}
+
+.c4:hover {
+  background-color: rgba(0,0,0,0.04);
+}
+
+.c4 > .sinoui-icon-button__ripple-layout {
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.c4 > .sinoui-icon-button__ripple-layout > .sinoui-icon-button__ripple {
+  width: 48px;
+  height: 48px;
+}
+
+.c5 {
   position: absolute;
   top: 2px;
   right: 8px;
   font-size: 12px;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple {
+  width: 32px;
+  height: 32px;
+}
+
+.c5 .sinoui-alert-close__ripple-layout {
+  width: 32px;
+  height: 32px;
+}
+
+@media (hover:none) {
+  .c3:hover {
+    background-color: transparent;
+  }
+}
+
+@media (hover:none) {
+  .c4:hover {
+    background-color: transparent;
+  }
 }
 
 <div
@@ -1403,9 +1563,9 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   />
   <button
     aria-label="Close"
-    className="sinoui-icon-button c3 c4 sinoui-alert-close-button"
+    className="c3 sinoui-base-button c4 sinoui-icon-button c5 sinoui-alert-close-button"
+    color="textSecondary"
     data-testid="closeButton"
-    description={false}
     onClick={[Function]}
     role="button"
     type="button"
@@ -1435,15 +1595,15 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
 exports[`Alert 快照测试 设置显示辅助图标 1`] = `
 .c1 {
   display: block;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -1452,8 +1612,8 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1488,7 +1648,7 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   position: absolute;
   top: 8px;
   left: 16px;
-  color: #3f51b5;
+  color: #303f9f;
 }
 
 <div
@@ -1506,7 +1666,7 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
     className="c2 sinoui-alert-description"
   />
   <span
-    className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+    className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
     color="currentColor"
     type="primary"
   >
@@ -1537,14 +1697,14 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -1553,8 +1713,8 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1589,7 +1749,7 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   position: absolute;
   top: 13px;
   left: 24px;
-  color: #3f51b5;
+  color: #303f9f;
 }
 
 <div
@@ -1609,7 +1769,7 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
     辅助性文字介绍
   </span>
   <span
-    className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+    className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
     color="currentColor"
     type="primary"
   >
@@ -1643,14 +1803,14 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0,0,0,0.6);
 }
 
 .c2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: block;
   line-height: 1.5rem;
-  color: rgba(0,0,0,0.54);
+  color: rgba(0,0,0,0.6);
 }
 
 .c0 {
@@ -1659,8 +1819,8 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #e8eaf6;
-  border: 1px solid #c5cae9;
+  background-color: #abb4e2;
+  border: 1px solid #6776ca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1695,7 +1855,7 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   position: absolute;
   top: 13px;
   left: 24px;
-  color: #3f51b5;
+  color: #303f9f;
 }
 
 <div
@@ -1715,7 +1875,7 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
     辅助性文字介绍
   </span>
   <span
-    className="c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
+    className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
     color="currentColor"
     type="primary"
   >

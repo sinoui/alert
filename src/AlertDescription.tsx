@@ -5,10 +5,10 @@ import styled from 'styled-components';
  */
 
 const AlertDescription = styled.span`
-  font-size: ${(props) => props.theme.typography.body1.fontSize}rem;
+  font-size: ${(props) => props.theme.typography.body1.fontSize};
   display: block;
   line-height: 1.5rem;
-  color: ${(props) => props.theme.typography.caption.color};
+  color: ${(props) => props.theme.palette.text.secondary};
 `;
 
 export default AlertDescription;

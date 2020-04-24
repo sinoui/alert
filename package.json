@@ -71,10 +71,12 @@
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "@babel/runtime": "^7.7.7",
-    "@sinoui/theme": "^0.3.5",
+    "@sinoui/core": "^1.0.0-beta.9",
+    "@sinoui/theme": "^1.0.0-beta.8",
     "assert": "^2.0.0",
     "classnames": "^2.2.6",
     "lodash-es": "^4.17.15",
+    "polished": "^3.5.2",
     "react-icons": "^3.8.0",
     "react-transition-group": "^4.3.0",
     "sinoui-components": "^0.2.9"
@@ -100,7 +102,7 @@
     "docz-theme-default": "^1.2.0",
     "gh-pages": "^2.2.0",
     "husky": "^4.0.1",
-    "jest-styled-components": "^6.3.3",
+    "jest-styled-components": "^7.0.2",
     "lint-staged": "^9.5.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",

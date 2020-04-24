@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lighten, darken } from 'polished';
 
 /**
  * 外层容器组件
@@ -41,19 +42,29 @@ const AlertLayout = styled.div<{
   border-radius: 4px;
   background-color: ${(props) =>
     props.theme.palette.type === 'light'
-      ? props.theme.palette[props.type === 'info' ? 'primary' : props.type][50]
-      : props.theme.palette[
-          props.type === 'info' ? 'primary' : props.type
-        ][800]};
+      ? lighten(
+          0.3,
+          props.theme.palette[props.type === 'info' ? 'primary' : props.type]
+            .main,
+        )
+      : darken(
+          0.3,
+          props.theme.palette[props.type === 'info' ? 'primary' : props.type]
+            .main,
+        )};
   border: 1px solid
     ${(props) =>
       props.theme.palette.type === 'light'
-        ? props.theme.palette[
-            props.type === 'info' ? 'primary' : props.type
-          ][100]
-        : props.theme.palette[
-            props.type === 'info' ? 'primary' : props.type
-          ][700]};
+        ? lighten(
+            0.12,
+            props.theme.palette[props.type === 'info' ? 'primary' : props.type]
+              .main,
+          )
+        : darken(
+            0.2,
+            props.theme.palette[props.type === 'info' ? 'primary' : props.type]
+              .main,
+          )};
 
   box-sizing: border-box;
   word-wrap: break-word;

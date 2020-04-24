@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import IconButton from 'sinoui-components/IconButton';
+import IconButton from '@sinoui/core/IconButton';
 
 /**
  * 关闭按钮组件
@@ -12,6 +12,18 @@ const CloseButton = styled(IconButton)<{
   right: 8px;
   font-size: ${(props) => (props.description ? '14px' : '12px')};
   color: ${(props) => props.theme.palette.text.secondary};
+  width: 32px;
+  height: 32px;
+
+  & .sinoui-alert-close__ripple {
+    width: 32px;
+    height: 32px;
+  }
+
+  & .sinoui-alert-close__ripple-layout {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export default CloseButton;
