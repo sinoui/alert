@@ -20,8 +20,8 @@ exports[`Alert 快照测试 children测试 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -46,7 +46,24 @@ exports[`Alert 快照测试 children测试 1`] = `
 
 exports[`Alert 快照测试 不同类型的警告提示 1`] = `
 Array [
-  .c1 {
+  .c3 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   color: rgba(0,0,0,0.6);
@@ -65,36 +82,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #b5dfb7;
-  border: 1px solid #75c378;
+  background-color: #e2f2e3;
+  border: 1px solid #cfead0;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c3 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
+.c4 {
   display: block;
   font-size: 16px;
   margin-right: 8px;
@@ -118,32 +113,39 @@ Array [
     <span
       className="c2 sinoui-alert-description"
     />
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c3 c4 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c4 sinoui-alert-icon"
+      data-testid="CheckCircleIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="success"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+      />
+    </svg>
   </div>,
-  .c1 {
+  .c3 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   color: rgba(0,0,0,0.6);
@@ -162,36 +164,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c3 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
+.c4 {
   display: block;
   font-size: 16px;
   margin-right: 8px;
@@ -215,32 +195,39 @@ Array [
     <span
       className="c2 sinoui-alert-description"
     />
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c3 c4 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c4 sinoui-alert-icon"
+      data-testid="InfoIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="primary"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+      />
+    </svg>
   </div>,
-  .c1 {
+  .c3 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   color: rgba(0,0,0,0.6);
@@ -259,36 +246,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #ffd699;
-  border: 1px solid #ffb13d;
+  background-color: #ffefd6;
+  border: 1px solid #ffe4bb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c3 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
+.c4 {
   display: block;
   font-size: 16px;
   margin-right: 8px;
@@ -312,32 +277,39 @@ Array [
     <span
       className="c2 sinoui-alert-description"
     />
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c3 c4 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c4 sinoui-alert-icon"
+      data-testid="WarningOutlinedIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="warning"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-32 232c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V296zm32 440a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+      />
+    </svg>
   </div>,
-  .c1 {
+  .c3 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   color: rgba(0,0,0,0.6);
@@ -356,36 +328,14 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #fccbc7;
-  border: 1px solid #f77970;
+  background-color: #fde1df;
+  border: 1px solid #f5caca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c3 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
+.c4 {
   display: block;
   font-size: 16px;
   margin-right: 8px;
@@ -409,37 +359,44 @@ Array [
     <span
       className="c2 sinoui-alert-description"
     />
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c3 c4 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c4 sinoui-alert-icon"
+      data-testid="ErrorIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="error"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+      />
+    </svg>
   </div>,
 ]
 `;
 
 exports[`Alert 快照测试 不同类型辅助性文字介绍和辅助图标 1`] = `
 Array [
-  .c1 {
+  .c6 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
@@ -459,43 +416,11 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c6 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
-  display: block;
-  font-size: 24px;
-  margin-right: 8px;
-  position: absolute;
-  top: 13px;
-  left: 24px;
-  color: #303f9f;
 }
 
 .c3 {
@@ -572,10 +497,13 @@ Array [
   position: absolute;
   top: 10px;
   right: 8px;
-  font-size: 14px;
   color: rgba(0,0,0,0.6);
   width: 32px;
   height: 32px;
+}
+
+.c5 .sinoui-svg-icon {
+  font-size: 16px;
 }
 
 .c5 .sinoui-alert-close__ripple {
@@ -586,6 +514,16 @@ Array [
 .c5 .sinoui-alert-close__ripple-layout {
   width: 32px;
   height: 32px;
+}
+
+.c7 {
+  display: block;
+  font-size: 24px;
+  margin-right: 8px;
+  position: absolute;
+  top: 13px;
+  left: 24px;
+  color: #303f9f;
 }
 
 @media (hover:none) {
@@ -626,53 +564,52 @@ Array [
       type="button"
     >
       <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        className="c6 sinoui-svg-icon"
+        data-testid="CloseOutlinedIcon"
+        focusable="false"
+        role="presentation"
+        size={24}
+        viewBox="0 0 24 24"
       >
         <path
-          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
         />
       </svg>
     </button>
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c6 c7 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c7 sinoui-alert-icon"
+      data-testid="InfoOutlinedIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="primary"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-        />
-        <path
-          d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+      />
+    </svg>
   </div>,
-  .c1 {
+  .c6 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
@@ -692,43 +629,11 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #b5dfb7;
-  border: 1px solid #75c378;
+  background-color: #e2f2e3;
+  border: 1px solid #cfead0;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c6 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
-  display: block;
-  font-size: 24px;
-  margin-right: 8px;
-  position: absolute;
-  top: 13px;
-  left: 24px;
-  color: #388e3c;
 }
 
 .c3 {
@@ -805,10 +710,13 @@ Array [
   position: absolute;
   top: 10px;
   right: 8px;
-  font-size: 14px;
   color: rgba(0,0,0,0.6);
   width: 32px;
   height: 32px;
+}
+
+.c5 .sinoui-svg-icon {
+  font-size: 16px;
 }
 
 .c5 .sinoui-alert-close__ripple {
@@ -819,6 +727,16 @@ Array [
 .c5 .sinoui-alert-close__ripple-layout {
   width: 32px;
   height: 32px;
+}
+
+.c7 {
+  display: block;
+  font-size: 24px;
+  margin-right: 8px;
+  position: absolute;
+  top: 13px;
+  left: 24px;
+  color: #388e3c;
 }
 
 @media (hover:none) {
@@ -859,53 +777,52 @@ Array [
       type="button"
     >
       <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        className="c6 sinoui-svg-icon"
+        data-testid="CloseOutlinedIcon"
+        focusable="false"
+        role="presentation"
+        size={24}
+        viewBox="0 0 24 24"
       >
         <path
-          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
         />
       </svg>
     </button>
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c6 c7 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c7 sinoui-alert-icon"
+      data-testid="CheckCircleOutlineIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="success"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z"
-        />
-        <path
-          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M16.59 7.58L10 14.17l-3.59-3.58L5 12l5 5 8-8zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+    </svg>
   </div>,
-  .c1 {
+  .c6 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
@@ -925,43 +842,11 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #ffd699;
-  border: 1px solid #ffb13d;
+  background-color: #ffefd6;
+  border: 1px solid #ffe4bb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c6 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
-  display: block;
-  font-size: 24px;
-  margin-right: 8px;
-  position: absolute;
-  top: 13px;
-  left: 24px;
-  color: #f57c00;
 }
 
 .c3 {
@@ -1038,10 +923,13 @@ Array [
   position: absolute;
   top: 10px;
   right: 8px;
-  font-size: 14px;
   color: rgba(0,0,0,0.6);
   width: 32px;
   height: 32px;
+}
+
+.c5 .sinoui-svg-icon {
+  font-size: 16px;
 }
 
 .c5 .sinoui-alert-close__ripple {
@@ -1052,6 +940,16 @@ Array [
 .c5 .sinoui-alert-close__ripple-layout {
   width: 32px;
   height: 32px;
+}
+
+.c7 {
+  display: block;
+  font-size: 24px;
+  margin-right: 8px;
+  position: absolute;
+  top: 13px;
+  left: 24px;
+  color: #f57c00;
 }
 
 @media (hover:none) {
@@ -1092,53 +990,52 @@ Array [
       type="button"
     >
       <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        className="c6 sinoui-svg-icon"
+        data-testid="CloseOutlinedIcon"
+        focusable="false"
+        role="presentation"
+        size={24}
+        viewBox="0 0 24 24"
       >
         <path
-          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
         />
       </svg>
     </button>
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c6 c7 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c7 sinoui-alert-icon"
+      data-testid="ReportProblemOutlinedIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="warning"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-        />
-        <path
-          d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm24-112h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z"
+      />
+    </svg>
   </div>,
-  .c1 {
+  .c6 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.c1 {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
@@ -1158,43 +1055,11 @@ Array [
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #fccbc7;
-  border: 1px solid #f77970;
+  background-color: #fde1df;
+  border: 1px solid #f5caca;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
-}
-
-.c6 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
-  display: block;
-  font-size: 24px;
-  margin-right: 8px;
-  position: absolute;
-  top: 13px;
-  left: 24px;
-  color: #d32f2f;
 }
 
 .c3 {
@@ -1271,10 +1136,13 @@ Array [
   position: absolute;
   top: 10px;
   right: 8px;
-  font-size: 14px;
   color: rgba(0,0,0,0.6);
   width: 32px;
   height: 32px;
+}
+
+.c5 .sinoui-svg-icon {
+  font-size: 16px;
 }
 
 .c5 .sinoui-alert-close__ripple {
@@ -1285,6 +1153,16 @@ Array [
 .c5 .sinoui-alert-close__ripple-layout {
   width: 32px;
   height: 32px;
+}
+
+.c7 {
+  display: block;
+  font-size: 24px;
+  margin-right: 8px;
+  position: absolute;
+  top: 13px;
+  left: 24px;
+  color: #d32f2f;
 }
 
 @media (hover:none) {
@@ -1325,51 +1203,33 @@ Array [
       type="button"
     >
       <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        className="c6 sinoui-svg-icon"
+        data-testid="CloseOutlinedIcon"
+        focusable="false"
+        role="presentation"
+        size={24}
+        viewBox="0 0 24 24"
       >
         <path
-          d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
         />
       </svg>
     </button>
-    <span
-      className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c6 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-      color="currentColor"
+    <svg
+      aria-hidden="true"
+      className="c6 c7 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c7 sinoui-alert-icon"
+      data-testid="ErrorOutlineIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
       type="error"
+      viewBox="0 0 24 24"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 1024 1024"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"
-        />
-        <path
-          d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-        />
-      </svg>
-    </span>
+      <path
+        d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+    </svg>
   </div>,
 ]
 `;
@@ -1394,8 +1254,8 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1419,6 +1279,23 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
 `;
 
 exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
+.c6 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
 .c1 {
   display: block;
   font-size: 1rem;
@@ -1438,8 +1315,8 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
@@ -1519,10 +1396,13 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
   position: absolute;
   top: 2px;
   right: 8px;
-  font-size: 12px;
   color: rgba(0,0,0,0.6);
   width: 32px;
   height: 32px;
+}
+
+.c5 .sinoui-svg-icon {
+  font-size: 14px;
 }
 
 .c5 .sinoui-alert-close__ripple {
@@ -1571,21 +1451,16 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
     type="button"
   >
     <svg
-      fill="currentColor"
-      height="1em"
-      stroke="currentColor"
-      strokeWidth="0"
-      style={
-        Object {
-          "color": undefined,
-        }
-      }
-      viewBox="0 0 1024 1024"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      className="c6 sinoui-svg-icon"
+      data-testid="CloseOutlinedIcon"
+      focusable="false"
+      role="presentation"
+      size={24}
+      viewBox="0 0 24 24"
     >
       <path
-        d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
       />
     </svg>
   </button>
@@ -1593,6 +1468,23 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
 `;
 
 exports[`Alert 快照测试 设置显示辅助图标 1`] = `
+.c3 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
 .c1 {
   display: block;
   font-size: 1rem;
@@ -1612,36 +1504,14 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c3 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
+.c4 {
   display: block;
   font-size: 16px;
   margin-right: 8px;
@@ -1665,34 +1535,41 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
   <span
     className="c2 sinoui-alert-description"
   />
-  <span
-    className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-    color="currentColor"
+  <svg
+    aria-hidden="true"
+    className="c3 c4 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c4 sinoui-alert-icon"
+    data-testid="InfoIcon"
+    focusable="false"
+    role="presentation"
+    size={24}
     type="primary"
+    viewBox="0 0 24 24"
   >
-    <svg
-      fill="currentColor"
-      height="1em"
-      stroke="currentColor"
-      strokeWidth="0"
-      style={
-        Object {
-          "color": undefined,
-        }
-      }
-      viewBox="0 0 1024 1024"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"
-      />
-    </svg>
-  </span>
+    <path
+      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+    />
+  </svg>
 </div>
 `;
 
 exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
+.c3 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
 .c1 {
   display: block;
   font-size: 1rem;
@@ -1713,36 +1590,14 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c3 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
+.c4 {
   display: block;
   font-size: 24px;
   margin-right: 8px;
@@ -1768,37 +1623,41 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   >
     辅助性文字介绍
   </span>
-  <span
-    className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-    color="currentColor"
+  <svg
+    aria-hidden="true"
+    className="c3 c4 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c4 sinoui-alert-icon"
+    data-testid="InfoOutlinedIcon"
+    focusable="false"
+    role="presentation"
+    size={24}
     type="primary"
+    viewBox="0 0 24 24"
   >
-    <svg
-      fill="currentColor"
-      height="1em"
-      stroke="currentColor"
-      strokeWidth="0"
-      style={
-        Object {
-          "color": undefined,
-        }
-      }
-      viewBox="0 0 1024 1024"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-      />
-      <path
-        d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"
-      />
-    </svg>
-  </span>
+    <path
+      d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+    />
+  </svg>
 </div>
 `;
 
 exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
+.c3 {
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
 .c1 {
   display: block;
   font-size: 1rem;
@@ -1819,36 +1678,14 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   color: rgba(0,0,0,0.65);
   line-height: 1.5;
   border-radius: 4px;
-  background-color: #abb4e2;
-  border: 1px solid #6776ca;
+  background-color: #dfe3f4;
+  border: 1px solid #ccd1eb;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-bottom: 16px;
 }
 
-.c3 {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  max-width: 1em;
-  display: inline-block;
-  text-transform: none;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  color: currentColor;
-  -webkit-transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  transition: color 200ms cubic-bezier(0.4,0.0,0.2,1) 0ms;
-  color: currentColor;
+.c4 {
   display: block;
   font-size: 24px;
   margin-right: 8px;
@@ -1874,32 +1711,19 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   >
     辅助性文字介绍
   </span>
-  <span
-    className="SimpleIcon-aivzxc-0 Icon-sc-1ynxmd2-0 c3 sinoui-alert-icon sinoui-icon sinoui-alert-icon"
-    color="currentColor"
+  <svg
+    aria-hidden="true"
+    className="c3 c4 sinoui-alert-icon sinoui-svg-icon Alert__IconTypeWrapper-xebh27-0 c4 sinoui-alert-icon"
+    data-testid="InfoOutlinedIcon"
+    focusable="false"
+    role="presentation"
+    size={24}
     type="primary"
+    viewBox="0 0 24 24"
   >
-    <svg
-      fill="currentColor"
-      height="1em"
-      stroke="currentColor"
-      strokeWidth="0"
-      style={
-        Object {
-          "color": undefined,
-        }
-      }
-      viewBox="0 0 1024 1024"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-      />
-      <path
-        d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"
-      />
-    </svg>
-  </span>
+    <path
+      d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+    />
+  </svg>
 </div>
 `;

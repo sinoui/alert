@@ -10,10 +10,12 @@ const CloseButton = styled(IconButton)<{
   position: absolute;
   top: ${(props) => (props.description ? '10px' : '2px')};
   right: 8px;
-  font-size: ${(props) => (props.description ? '14px' : '12px')};
   color: ${(props) => props.theme.palette.text.secondary};
   width: 32px;
   height: 32px;
+  & .sinoui-svg-icon {
+    font-size: ${(props) => (props.description ? '16px' : '14px')};
+  }
 
   & .sinoui-alert-close__ripple {
     width: 32px;

@@ -1,9 +1,22 @@
 import styled from 'styled-components';
-import { lighten, darken } from 'polished';
+import { parseToHsl, toColorString } from 'polished';
 
 /**
  * 外层容器组件
  */
+
+function lighten(num: number, colorStr: string) {
+  const color = parseToHsl(colorStr);
+
+  color.lightness += (1 - color.lightness) * num;
+  return toColorString(color);
+}
+
+function darken(num: number, colorStr: string) {
+  const color = parseToHsl(colorStr);
+  color.lightness *= 1 - num;
+  return toColorString(color);
+}
 
 const alertLayoutPaddingCss = ({
   description,
@@ -43,7 +56,7 @@ const AlertLayout = styled.div<{
   background-color: ${(props) =>
     props.theme.palette.type === 'light'
       ? lighten(
-          0.3,
+          0.84,
           props.theme.palette[props.type === 'info' ? 'primary' : props.type]
             .main,
         )
@@ -56,9 +69,9 @@ const AlertLayout = styled.div<{
     ${(props) =>
       props.theme.palette.type === 'light'
         ? lighten(
-            0.12,
+            0.62,
             props.theme.palette[props.type === 'info' ? 'primary' : props.type]
-              .main,
+              .light,
           )
         : darken(
             0.2,

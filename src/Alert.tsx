@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 import { CSSTransition } from 'react-transition-group';
-import {
-  AiFillCheckCircle,
-  AiOutlineCheckCircle,
-  AiOutlineInfoCircle,
-  AiFillInfoCircle,
-  AiFillCloseCircle,
-  AiFillExclamationCircle,
-  AiOutlineExclamationCircle,
-  AiOutlineCloseCircle,
-  AiOutlineClose,
-} from 'react-icons/ai';
+import CheckCircle from '@sinoui/icons/CheckCircle';
+import CheckCircleOutline from '@sinoui/icons/CheckCircleOutline';
+import Info from '@sinoui/icons/Info';
+import InfoOutlined from '@sinoui/icons/InfoOutlined';
+import Error from '@sinoui/icons/Error';
+import ErrorOutline from '@sinoui/icons/ErrorOutline';
+import WarningOutlined from '@sinoui/icons/WarningOutlined';
+import ReportProblemOutlined from '@sinoui/icons/ReportProblemOutlined';
+import CloseOutlined from '@sinoui/icons/CloseOutlined';
 import classNames from 'classnames';
 import assert from 'assert';
 import AlertMessage from './AlertMessage';
 import AlertDescription from './AlertDescription';
 import AlertLayout from './AlertLayout';
-import DenseIcon from './DenseIcon';
 import CloseButton from './CloseButton';
 
 const timeout = 200;
@@ -32,6 +29,15 @@ const Globalstyle = createGlobalStyle`
     height: 0!important;
     transition: opacity ${timeout}ms, transform ${timeout}ms, height ${timeout}ms;
   }
+`;
+
+const colorCss = css<{
+  type: 'primary' | 'info' | 'success' | 'warning' | 'error';
+}>`
+  color: ${(props) =>
+    props.theme.palette[props.type][
+      props.theme.palette.type === 'dark' ? 'light' : 'dark'
+    ]};
 `;
 
 interface Props {
@@ -70,17 +76,17 @@ interface Props {
 }
 
 const iconMapFilled = {
-  success: AiFillCheckCircle,
-  info: AiFillInfoCircle,
-  error: AiFillCloseCircle,
-  warning: AiFillExclamationCircle,
+  success: CheckCircle,
+  info: Info,
+  error: Error,
+  warning: WarningOutlined,
 };
 
 const iconMapOutlined = {
-  success: AiOutlineCheckCircle,
-  info: AiOutlineInfoCircle,
-  error: AiOutlineCloseCircle,
-  warning: AiOutlineExclamationCircle,
+  success: CheckCircleOutline,
+  info: InfoOutlined,
+  error: ErrorOutline,
+  warning: ReportProblemOutlined,
 };
 
 /**
@@ -124,11 +130,27 @@ function Alert(props: Props) {
       className="sinoui-alert-close-button"
       ripple={rippleConfig}
     >
-      <AiOutlineClose />
+      <CloseOutlined />
     </CloseButton>
   ) : null;
 
   const IconType = (description ? iconMapOutlined : iconMapFilled)[type];
+
+  /**
+   * 辅助图标组件
+   */
+  const IconTypeWrapper = styled(IconType)<{
+    description?: boolean;
+    type: 'primary' | 'info' | 'success' | 'warning' | 'error';
+  }>`
+    display: block;
+    font-size: ${description ? '24px' : '16px'};
+    margin-right: 8px;
+    position: absolute;
+    top: ${description ? '13px' : '8px'};
+    left: ${description ? '24px' : '16px'};
+    ${colorCss}
+  `;
 
   return (
     <>
@@ -168,13 +190,10 @@ function Alert(props: Props) {
           </AlertDescription>
           {closeIcon}
           {showIcon ? (
-            <DenseIcon
-              description={!!description}
+            <IconTypeWrapper
               type={type === 'info' ? 'primary' : type}
               className="sinoui-alert-icon"
-            >
-              <IconType />
-            </DenseIcon>
+            />
           ) : null}
         </AlertLayout>
       </CSSTransition>
