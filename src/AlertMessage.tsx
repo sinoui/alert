@@ -9,7 +9,7 @@ const AlertMessage = styled.span<{ description?: boolean }>`
   font-size: ${(props) =>
     props.description
       ? props.theme.typography.subtitle1.fontSize
-      : props.theme.typography.body1.fontSize};
+      : props.theme.typography.body2.fontSize};
   margin-bottom: ${(props) => props.description && '4px'};
   color: ${(props) => props.theme.palette.text.secondary};
 `;

@@ -1,5 +1,11 @@
 # @sinoui/alert 版本变更记录
 
+## v1.0.1 - 2020.4.27
+
+- fix: 升级 @sinoui/theme
+- fix: sinoui-components 库调整为引用 @sinoui/core
+- fix: react-icons 库调整为引用 @sinoui/icons
+
 ## v1.0.0 - 2020.1.14
 
 @sinoui/alert 基础实现。 :tada: :tada::tada:
