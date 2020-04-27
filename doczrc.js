@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable global-require */
 import url from 'url';
 import packageInfo from './package.json';
 
@@ -8,10 +6,7 @@ import packageInfo from './package.json';
  */
 function getBaseUrl() {
   if (process.env.NODE_ENV === 'production') {
-    const {
-      name,
-      homepage
-    } = packageInfo;
+    const { name, homepage } = packageInfo;
 
     if (homepage) {
       return url.parse(homepage).path;
@@ -25,58 +20,23 @@ function getBaseUrl() {
 }
 
 export default {
-  title: 'alert',
-  codeSandbox: false,
   typescript: true,
-  files: ['**/*.mdx'],
+  files: ['docs/**/*.mdx'],
   public: './docs/assets',
-  menu: [],
-  wrapper: 'docs/Wrapper.tsx',
-  indexHtml: 'docs/index.html',
   base: getBaseUrl(),
-  onCreateWebpackChain: (config) => {
-    // 配置webpack的方式：[webpack-chain](https://github.com/neutrinojs/webpack-chain)
-
-    config.module
-      .rule('css')
-      .test(/\.css$/)
-      .use('style-loader')
-      .loader('style-loader')
-      .end()
-      .use('css-loader')
-      .loader('css-loader')
-      .options({
-        importLoaders: 1,
-      })
-      .end()
-      .use('postcss-loader')
-      .loader('postcss-loader')
-      .options({
-        plugins: (loader) => [
-          require('postcss-import')({
-            root: loader.resourcePath,
-          }),
-          require('postcss-preset-env')({
-            browsers: ['last 2 versions', 'not dead', 'IE 10', 'IE 11'],
-          }),
-        ],
-      })
-      .end();
-
-    config
-      .plugin('ghpages')
-      .use(require('webpack-docz-ghpages-plugin'))
-      .end();
-
-    config.resolve
-      .plugin('tsconfig-paths')
-      .use(require('tsconfig-paths-webpack-plugin'))
-      .end();
-
-    config.watchOptions({
-      ignored: ['node_modules', 'dist', '.cache', 'coverage', '.docz'],
-    });
-
-    return config;
-  },
+  menu: [
+    '开始',
+    '样式定制',
+    {
+      name: 'API',
+      menu: [
+        'TabGroup',
+        'Tab',
+        'TabHeader',
+        'TabHeaderItem',
+        'TabContent',
+        'TabPanel',
+      ],
+    },
+  ],
 };
