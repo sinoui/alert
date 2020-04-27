@@ -1,6 +1,6 @@
 {
   "name": "@sinoui/alert",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "警告提示，展现需要关注的信息。",
   "license": "MIT",
   "main": "dist/index.js",
