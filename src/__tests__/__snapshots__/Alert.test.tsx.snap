@@ -4,11 +4,11 @@ exports[`Alert 快照测试 children测试 1`] = `
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -66,11 +66,11 @@ Array [
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -148,11 +148,11 @@ Array [
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -230,11 +230,11 @@ Array [
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -312,11 +312,11 @@ Array [
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -400,11 +400,11 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -613,11 +613,11 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -826,11 +826,11 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -1039,11 +1039,11 @@ Array [
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -1238,11 +1238,11 @@ exports[`Alert 快照测试 渲染Alert 1`] = `
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -1299,11 +1299,11 @@ exports[`Alert 快照测试 设置显示关闭按钮 1`] = `
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -1488,11 +1488,11 @@ exports[`Alert 快照测试 设置显示辅助图标 1`] = `
 .c1 {
   display: block;
   font-size: 0.875rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -1574,11 +1574,11 @@ exports[`Alert 快照测试 设置辅助性文字介绍 1`] = `
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);
@@ -1662,11 +1662,11 @@ exports[`Alert 快照测试 辅助性文字介绍和辅助图标 1`] = `
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.87);
 }
 
 .c2 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: block;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.6);

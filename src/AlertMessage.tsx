@@ -11,7 +11,7 @@ const AlertMessage = styled.span<{ description?: boolean }>`
       ? props.theme.typography.subtitle1.fontSize
       : props.theme.typography.body2.fontSize};
   margin-bottom: ${(props) => props.description && '4px'};
-  color: ${(props) => props.theme.palette.text.secondary};
+  color: ${(props) => props.theme.palette.text.primary};
 `;
 
 export default AlertMessage;
